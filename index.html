@@ -1097,6 +1097,75 @@
     .choice-table table { min-width: 820px; }
     .budget table { min-width: 700px; }
 
+    .choice-table {
+      position: relative;
+      border: 1px solid #dbe8f0;
+      background: #fff;
+    }
+
+    .choice-table h4 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--navy);
+    }
+
+    .choice-table h4::before {
+      content: "备选";
+      display: inline-flex;
+      align-items: center;
+      height: 24px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: var(--teal);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .choice-help {
+      margin: 8px 0 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid #b9ded8;
+      background: #eefaf6;
+      color: #0f4b45;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .choice-help strong {
+      color: #0d6158;
+    }
+
+    .choice-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 74px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+      background: var(--navy);
+    }
+
+    .choice-badge.route { background: #172a58; }
+    .choice-badge.lunch { background: #0f766e; }
+    .choice-badge.activity { background: #2563eb; }
+    .choice-badge.dinner { background: #b45309; }
+    .choice-badge.night { background: #7c3aed; }
+    .choice-badge.shopping { background: #be185d; }
+    .choice-badge.airport { background: #475569; }
+
+    .choice-table td:first-child {
+      width: 104px;
+      vertical-align: top;
+    }
+
     .hotel-spec {
       margin: 18px 0 4px;
       padding: 18px;
@@ -1454,6 +1523,7 @@
 
       <div class="choice-table">
         <h4>4 家酒店怎么选｜差异比较</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead>
             <tr><th>酒店</th><th>区域</th><th>最适合</th><th>主要优点</th><th>注意点</th><th>预算感</th></tr>
@@ -1482,6 +1552,7 @@
 
       <div class="choice-table">
         <h4>住宿设施备注｜订房前建议确认</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead>
             <tr><th>项目</th><th>Centre Point Sukhumvit 10</th><th>Shama Lakeview Asoke</th><th>Marriott Executive Apartments</th><th>Ascott Embassy Sathorn</th></tr>
@@ -1565,17 +1636,18 @@
           </div>
 
           <div class="choice-table">
-            <h4>Day 1 选择表：午餐 1-3 / 活动 1-2 / 晚餐 1-2</h4>
+            <h4>Day 1 备选表：午餐选 1 个 / 活动选 1 个 / 晚餐选 1 个</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
             <table>
-              <thead><tr><th>选项</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
+              <thead><tr><th>备选组</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
               <tbody>
-                <tr><td>午餐 1</td><td>Pier 21 Food Court</td><td>去 Jim Thompson 约 20-30 分钟</td><td>便宜、选择最多，适合刚下飞机大家口味不统一。</td></tr>
-                <tr><td>午餐 2</td><td>Som Tam Nua / Have a Zeed</td><td>去 Jim Thompson 约 15-25 分钟</td><td>想第一餐就吃泰式酸辣、烤肉、青木瓜沙拉。</td></tr>
-                <tr><td>午餐 3</td><td>Kub Kao Kub Pla</td><td>去 Jim Thompson 约 20-35 分钟</td><td>坐得舒服，适合 6 人点菜分享，预算比 food court 高。</td></tr>
-                <tr><td>活动 1</td><td>Jim Thompson House</td><td>回酒店约 20-40 分钟</td><td>曼谷经典文化点，不会太累，适合第一天。</td></tr>
-                <tr><td>活动 2</td><td>Siam Paragon / CentralWorld</td><td>回酒店约 15-35 分钟</td><td>如果大家累或下雨，就改商场线。</td></tr>
-                <tr><td>晚餐 1</td><td>ICONSIAM SookSiam</td><td>回酒店约 35-70 分钟</td><td>选择多、有气氛，适合第一晚让大家自由买小吃。</td></tr>
-                <tr><td>晚餐 2</td><td>河景餐厅</td><td>回酒店约 35-70 分钟</td><td>适合想要坐下来吃、拍河景团体照；建议订位。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 1</span></td><td>Pier 21 Food Court</td><td>去 Jim Thompson 约 20-30 分钟</td><td>便宜、选择最多，适合刚下飞机大家口味不统一。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 2</span></td><td>Som Tam Nua / Have a Zeed</td><td>去 Jim Thompson 约 15-25 分钟</td><td>想第一餐就吃泰式酸辣、烤肉、青木瓜沙拉。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 3</span></td><td>Kub Kao Kub Pla</td><td>去 Jim Thompson 约 20-35 分钟</td><td>坐得舒服，适合 6 人点菜分享，预算比 food court 高。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 1</span></td><td>Jim Thompson House</td><td>回酒店约 20-40 分钟</td><td>曼谷经典文化点，不会太累，适合第一天。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 2</span></td><td>Siam Paragon / CentralWorld</td><td>回酒店约 15-35 分钟</td><td>如果大家累或下雨，就改商场线。</td></tr>
+                <tr><td><span class="choice-badge dinner">晚餐 1</span></td><td>ICONSIAM SookSiam</td><td>回酒店约 35-70 分钟</td><td>选择多、有气氛，适合第一晚让大家自由买小吃。</td></tr>
+                <tr><td><span class="choice-badge dinner">晚餐 2</span></td><td>河景餐厅</td><td>回酒店约 35-70 分钟</td><td>适合想要坐下来吃、拍河景团体照；建议订位。</td></tr>
               </tbody>
             </table>
           </div>
@@ -1639,21 +1711,22 @@
           </div>
 
           <div class="choice-table">
-            <h4>Day 2 选择表：午餐 1-3 / 活动 1-2 / 晚餐与夜间活动</h4>
+            <h4>Day 2 备选表：午餐选 1 个 / 下午选 1 个 / 晚上选 1 个</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
             <table>
-              <thead><tr><th>选项</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
+              <thead><tr><th>备选组</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
               <tbody>
-                <tr><td>午餐 1</td><td>Rongros 河景餐厅</td><td>去 Wat Arun 约 10-20 分钟</td><td>景观最好，适合拍 Wat Arun；缺点是要订位、预算较高。</td></tr>
-                <tr><td>午餐 2</td><td>Supanniga Eating Room</td><td>去 Wat Arun 约 10-20 分钟</td><td>泰菜稳定，适合 6 人点菜分享，比较不踩雷。</td></tr>
-                <tr><td>午餐 3</td><td>Tha Maharaj 商区</td><td>去 Wat Arun 约 15-25 分钟</td><td>选择多、有冷气、好集合，适合怕热或临时决定。</td></tr>
-                <tr><td>活动 1</td><td>Wat Arun 后回酒店休息</td><td>约 35-70 分钟</td><td>最推荐，寺庙日很晒，休息后晚上唐人街体验更好。</td></tr>
-                <tr><td>活动 2</td><td>Wat Arun 后直接去咖啡 / 河边</td><td>约 10-25 分钟</td><td>适合不想回酒店，但体力消耗会比较大。</td></tr>
-                <tr><td>晚餐 1</td><td>Yaowarat 街边小吃线</td><td>回酒店约 30-60 分钟</td><td>最有当地感，适合边走边吃；6人要约集合点。</td></tr>
-                <tr><td>晚餐 2</td><td>T&K Seafood / 店内用餐</td><td>回酒店约 30-60 分钟</td><td>6人坐下来点菜更舒服，适合不想一直排小吃。</td></tr>
-                <tr><td>夜间活动 1</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从 Yaowarat 约 20-35 分钟</td><td>曼谷最经典娱乐之一，现场气氛强；适合想体验泰国本地夜间活动。</td></tr>
-                <tr><td>夜间活动 2</td><td>Asiatique + Calypso Cabaret</td><td>从 Yaowarat 约 25-45 分钟</td><td>比较游客向但出名，适合想看表演、又不想去太复杂夜生活的团。</td></tr>
-                <tr><td>夜间活动 3</td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya Dinner Cruise"><div><strong>Chao Phraya Dinner Cruise</strong><div class="links"><a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从老城区/ICONSIAM 约 20-40 分钟</td><td>河景晚餐 + 游船，适合家庭团；要提前订位，天气好体验更佳。</td></tr>
-                <tr><td>夜间活动 4</td><td>Sky Bar：Lebua / Tichuca / Octave</td><td>从 Yaowarat 约 25-50 分钟</td><td>曼谷很出名的夜景酒吧；需注意 dress code，不适合穿拖鞋短裤。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 1</span></td><td>Rongros 河景餐厅</td><td>去 Wat Arun 约 10-20 分钟</td><td>景观最好，适合拍 Wat Arun；缺点是要订位、预算较高。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 2</span></td><td>Supanniga Eating Room</td><td>去 Wat Arun 约 10-20 分钟</td><td>泰菜稳定，适合 6 人点菜分享，比较不踩雷。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 3</span></td><td>Tha Maharaj 商区</td><td>去 Wat Arun 约 15-25 分钟</td><td>选择多、有冷气、好集合，适合怕热或临时决定。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 1</span></td><td>Wat Arun 后回酒店休息</td><td>约 35-70 分钟</td><td>最推荐，寺庙日很晒，休息后晚上唐人街体验更好。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 2</span></td><td>Wat Arun 后直接去咖啡 / 河边</td><td>约 10-25 分钟</td><td>适合不想回酒店，但体力消耗会比较大。</td></tr>
+                <tr><td><span class="choice-badge dinner">晚餐 1</span></td><td>Yaowarat 街边小吃线</td><td>回酒店约 30-60 分钟</td><td>最有当地感，适合边走边吃；6人要约集合点。</td></tr>
+                <tr><td><span class="choice-badge dinner">晚餐 2</span></td><td>T&K Seafood / 店内用餐</td><td>回酒店约 30-60 分钟</td><td>6人坐下来点菜更舒服，适合不想一直排小吃。</td></tr>
+                <tr><td><span class="choice-badge night">夜间活动 1</span></td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从 Yaowarat 约 20-35 分钟</td><td>曼谷最经典娱乐之一，现场气氛强；适合想体验泰国本地夜间活动。</td></tr>
+                <tr><td><span class="choice-badge night">夜间活动 2</span></td><td>Asiatique + Calypso Cabaret</td><td>从 Yaowarat 约 25-45 分钟</td><td>比较游客向但出名，适合想看表演、又不想去太复杂夜生活的团。</td></tr>
+                <tr><td><span class="choice-badge night">夜间活动 3</span></td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya Dinner Cruise"><div><strong>Chao Phraya Dinner Cruise</strong><div class="links"><a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从老城区/ICONSIAM 约 20-40 分钟</td><td>河景晚餐 + 游船，适合家庭团；要提前订位，天气好体验更佳。</td></tr>
+                <tr><td><span class="choice-badge night">夜间活动 4</span></td><td>Sky Bar：Lebua / Tichuca / Octave</td><td>从 Yaowarat 约 25-50 分钟</td><td>曼谷很出名的夜景酒吧；需注意 dress code，不适合穿拖鞋短裤。</td></tr>
               </tbody>
             </table>
           </div>
@@ -1717,21 +1790,22 @@
           </div>
 
           <div class="choice-table">
-            <h4>Day 3 选择表：路线 1-3 / 午餐 1-2 / 晚上活动</h4>
+            <h4>Day 3 备选表：路线选 1 个 / 午餐选 1 个 / 晚上选 1 个</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
             <table>
-              <thead><tr><th>选项</th><th>内容</th><th>额外/节省时间</th><th>适合谁</th></tr></thead>
+              <thead><tr><th>备选组</th><th>内容</th><th>额外/节省时间</th><th>适合谁</th></tr></thead>
               <tbody>
-                <tr><td>路线 1</td><td>Wat Mahathat + Wat Phra Si Sanphet + 午餐 + Wat Chaiwatthanaram</td><td>全天约 10-11 小时</td><td>最平衡，有经典照片也不会太赶。</td></tr>
-                <tr><td>路线 2</td><td>标准版 + Bang Pa-In Palace</td><td>多 60-90 分钟</td><td>适合体力好、想看宫殿建筑的大家。</td></tr>
-                <tr><td>路线 3</td><td>只去 2 个遗迹 + 河边午餐 + 咖啡</td><td>省 60-90 分钟</td><td>适合怕热、有长辈或不想太晒。</td></tr>
-                <tr><td>午餐 1</td><td>Baan Mai Rim Nam</td><td>去 Wat Chaiwatthanaram 约 20-35 分钟</td><td>河边泰菜，团体点菜舒服。</td></tr>
-                <tr><td>午餐 2</td><td>Sala Ayutthaya</td><td>去 Wat Chaiwatthanaram 约 15-30 分钟</td><td>景观和质感好，适合预算高一点。</td></tr>
-                <tr><td>晚上活动 1</td><td>Mahanakhon SkyWalk</td><td>从酒店约 20-45 分钟</td><td>夜景很出名，但票价较高，天气不好就取消。</td></tr>
-                <tr><td>晚上活动 2</td><td>Banthat Thong 美食街</td><td>从酒店约 20-40 分钟</td><td>更当地、选择多，预算比 Mahanakhon 低。</td></tr>
-                <tr><td>晚上活动 3</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从酒店约 25-55 分钟</td><td>如果 Day 2 没看泰拳，可以放 Day 3；但大城府回来会累，适合体力好的团。</td></tr>
-                <tr><td>晚上活动 4</td><td>Jodd Fairs / Ratchada 夜市</td><td>从酒店约 20-45 分钟</td><td>游客友好、选择多、拍照容易，比大型表演轻松。</td></tr>
-                <tr><td>晚上活动 5</td><td>RCA / Tichuca / Octave 夜生活</td><td>从酒店约 20-50 分钟</td><td>适合年轻团想体验 Bangkok nightlife；需确认年龄、dress code、预算。</td></tr>
-                <tr><td>晚上活动 6</td><td>酒店附近 Thai Massage</td><td>步行或 Grab 5-20 分钟</td><td>最实际的选择，大城府走一天后最舒服，也最不会拖太晚。</td></tr>
+                <tr><td><span class="choice-badge route">路线 1</span></td><td>Wat Mahathat + Wat Phra Si Sanphet + 午餐 + Wat Chaiwatthanaram</td><td>全天约 10-11 小时</td><td>最平衡，有经典照片也不会太赶。</td></tr>
+                <tr><td><span class="choice-badge route">路线 2</span></td><td>标准版 + Bang Pa-In Palace</td><td>多 60-90 分钟</td><td>适合体力好、想看宫殿建筑的大家。</td></tr>
+                <tr><td><span class="choice-badge route">路线 3</span></td><td>只去 2 个遗迹 + 河边午餐 + 咖啡</td><td>省 60-90 分钟</td><td>适合怕热、有长辈或不想太晒。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 1</span></td><td>Baan Mai Rim Nam</td><td>去 Wat Chaiwatthanaram 约 20-35 分钟</td><td>河边泰菜，团体点菜舒服。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 2</span></td><td>Sala Ayutthaya</td><td>去 Wat Chaiwatthanaram 约 15-30 分钟</td><td>景观和质感好，适合预算高一点。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 1</span></td><td>Mahanakhon SkyWalk</td><td>从酒店约 20-45 分钟</td><td>夜景很出名，但票价较高，天气不好就取消。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 2</span></td><td>Banthat Thong 美食街</td><td>从酒店约 20-40 分钟</td><td>更当地、选择多，预算比 Mahanakhon 低。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 3</span></td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从酒店约 25-55 分钟</td><td>如果 Day 2 没看泰拳，可以放 Day 3；但大城府回来会累，适合体力好的团。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 4</span></td><td>Jodd Fairs / Ratchada 夜市</td><td>从酒店约 20-45 分钟</td><td>游客友好、选择多、拍照容易，比大型表演轻松。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 5</span></td><td>RCA / Tichuca / Octave 夜生活</td><td>从酒店约 20-50 分钟</td><td>适合年轻团想体验 Bangkok nightlife；需确认年龄、dress code、预算。</td></tr>
+                <tr><td><span class="choice-badge night">晚上活动 6</span></td><td>酒店附近 Thai Massage</td><td>步行或 Grab 5-20 分钟</td><td>最实际的选择，大城府走一天后最舒服，也最不会拖太晚。</td></tr>
               </tbody>
             </table>
           </div>
@@ -1793,17 +1867,18 @@
           </div>
 
           <div class="choice-table">
-            <h4>Day 4 选择表：购物 1-2 / 午餐 1-2 / 活动 1-2</h4>
+            <h4>Day 4 备选表：购物选 1-2 个 / 午餐选 1 个 / 活动选 1 个</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
             <table>
-              <thead><tr><th>选项</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
+              <thead><tr><th>备选组</th><th>选择</th><th>到下一站用时</th><th>为什么选它</th></tr></thead>
               <tbody>
-                <tr><td>购物 1</td><td>CentralWorld + Big C</td><td>去 Platinum 约 10-20 分钟</td><td>手信最方便，路线集中，不容易散队。</td></tr>
-                <tr><td>购物 2</td><td>Platinum Fashion Mall</td><td>回酒店约 25-45 分钟</td><td>适合买衣服，但人多，6人要约集合点。</td></tr>
-                <tr><td>午餐 1</td><td>Go-Ang Pratunam</td><td>去按摩 / 咖啡约 10-20 分钟</td><td>快、出名、靠购物区，最后一天很实用。</td></tr>
-                <tr><td>午餐 2</td><td>Kub Kao Kub Pla / 商场泰菜</td><td>去按摩 / 咖啡约 5-20 分钟</td><td>坐得舒服，适合想吃体面一点的最后一餐。</td></tr>
-                <tr><td>活动 1</td><td>60分钟 foot massage</td><td>回酒店约 20-45 分钟</td><td>最安全，时间好控制。</td></tr>
-                <tr><td>活动 2</td><td>90分钟 spa / oil massage</td><td>回酒店约 20-45 分钟</td><td>更舒服，但必须 14:00 前开始，否则会压缩机场时间。</td></tr>
-                <tr><td>机场</td><td>16:30 从酒店出发 DMK</td><td>约 60-100 分钟</td><td>最保险；不要为了多逛 30 分钟冒险。</td></tr>
+                <tr><td><span class="choice-badge shopping">购物 1</span></td><td>CentralWorld + Big C</td><td>去 Platinum 约 10-20 分钟</td><td>手信最方便，路线集中，不容易散队。</td></tr>
+                <tr><td><span class="choice-badge shopping">购物 2</span></td><td>Platinum Fashion Mall</td><td>回酒店约 25-45 分钟</td><td>适合买衣服，但人多，6人要约集合点。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 1</span></td><td>Go-Ang Pratunam</td><td>去按摩 / 咖啡约 10-20 分钟</td><td>快、出名、靠购物区，最后一天很实用。</td></tr>
+                <tr><td><span class="choice-badge lunch">午餐 2</span></td><td>Kub Kao Kub Pla / 商场泰菜</td><td>去按摩 / 咖啡约 5-20 分钟</td><td>坐得舒服，适合想吃体面一点的最后一餐。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 1</span></td><td>60分钟 foot massage</td><td>回酒店约 20-45 分钟</td><td>最安全，时间好控制。</td></tr>
+                <tr><td><span class="choice-badge activity">活动 2</span></td><td>90分钟 spa / oil massage</td><td>回酒店约 20-45 分钟</td><td>更舒服，但必须 14:00 前开始，否则会压缩机场时间。</td></tr>
+                <tr><td><span class="choice-badge airport">机场</span></td><td>16:30 从酒店出发 DMK</td><td>约 60-100 分钟</td><td>最保险；不要为了多逛 30 分钟冒险。</td></tr>
               </tbody>
             </table>
           </div>
@@ -2202,6 +2277,7 @@
 
       <div class="choice-table">
         <h4>更多当地特色活动库｜按兴趣挑</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead><tr><th>类型</th><th>活动</th><th>建议放哪天</th><th>需时 / 移动</th><th>适合谁</th><th>备注</th></tr></thead>
           <tbody>
@@ -2222,6 +2298,7 @@
 
       <div class="choice-table">
         <h4>特色活动替换建议</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead><tr><th>想要的感觉</th><th>推荐活动</th><th>替换哪一段</th><th>对行程影响</th></tr></thead>
           <tbody>
@@ -2239,6 +2316,7 @@
       <p class="section-intro">如果大家不想按摩，可以用这些活动替代。建议不要每天晚上都排重活动，Day 2 或 Day 3 选其中一个就好。</p>
       <div class="choice-table">
         <h4>活动选择表</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead><tr><th>活动</th><th>建议放哪天</th><th>需时 / 移动</th><th>适合谁</th><th>备注</th></tr></thead>
           <tbody>
@@ -2741,6 +2819,7 @@
 
       <div class="choice-table">
         <h4>More Local Activity Options</h4>
+            <div class="choice-help"><strong>这是备选区，不是全部都要做。</strong>同一组通常选 1 个；可按体力、天气、排队和预算临时替换。</div>
         <table>
           <thead><tr><th>Type</th><th>Activity</th><th>Best Day</th><th>Time / Transfer</th><th>Best For</th><th>Note</th></tr></thead>
           <tbody>
