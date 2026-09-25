@@ -19,7 +19,6 @@
       --cream: #fff7e6;
       --rose: #fff0ed;
     }
-
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -28,7 +27,6 @@
       font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
       line-height: 1.62;
     }
-
     .page {
       width: min(1100px, calc(100% - 32px));
       margin: 24px auto;
@@ -36,7 +34,6 @@
       border: 1px solid rgba(23, 32, 51, .08);
       box-shadow: 0 18px 50px rgba(23, 32, 51, .16);
     }
-
     .hero {
       padding: 42px 48px 34px;
       background:
@@ -46,7 +43,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::after {
       content: "";
       position: absolute;
@@ -57,7 +53,6 @@
       border: 38px solid rgba(255,255,255,.12);
       border-radius: 50%;
     }
-
     .eyebrow {
       display: inline-flex;
       gap: 8px;
@@ -69,21 +64,18 @@
       letter-spacing: .04em;
       text-transform: uppercase;
     }
-
     h1 {
       margin: 22px 0 8px;
       font-size: clamp(32px, 5vw, 54px);
       line-height: 1.08;
       letter-spacing: 0;
     }
-
     .subtitle {
       max-width: 760px;
       margin: 0;
       color: rgba(255,255,255,.86);
       font-size: 18px;
     }
-
     .summary {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -92,26 +84,22 @@
       background: #fff;
       border-bottom: 1px solid var(--line);
     }
-
     .summary div {
       padding: 14px 16px;
       border-left: 4px solid var(--teal);
       background: #f8fafc;
       min-height: 86px;
     }
-
     .label {
       display: block;
       color: var(--muted);
       font-size: 13px;
       margin-bottom: 4px;
     }
-
     .value {
       font-size: 17px;
       font-weight: 700;
     }
-
     .visual-strip {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -119,7 +107,6 @@
       padding: 22px 48px 6px;
       background: #fff;
     }
-
     .photo-card {
       min-height: 178px;
       border-radius: 16px;
@@ -128,14 +115,12 @@
       background: #f8fafc;
       position: relative;
     }
-
     .photo-card img {
       width: 100%;
       height: 132px;
       display: block;
       object-fit: cover;
     }
-
     .photo-card span {
       display: block;
       padding: 9px 10px 10px;
@@ -143,26 +128,22 @@
       font-weight: 800;
       color: var(--navy);
     }
-
     .flight-layout {
       display: grid;
       grid-template-columns: 1fr .95fr;
       gap: 18px;
       align-items: start;
     }
-
     .flight-cards {
       display: grid;
       gap: 14px;
     }
-
     .flight-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 18px;
     }
-
     .flight-card h3 {
       display: flex;
       justify-content: space-between;
@@ -170,40 +151,34 @@
       align-items: center;
       margin-bottom: 12px;
     }
-
     .flight-card .route {
       color: var(--navy);
       font-size: 20px;
       font-weight: 900;
     }
-
     .flight-meta {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin-top: 12px;
     }
-
     .flight-meta div {
       padding: 10px 12px;
       background: #f8fafc;
       border-radius: 12px;
       border: 1px solid #e8eef6;
     }
-
     .flight-shot {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
     }
-
     .flight-shot img {
       display: block;
       width: 100%;
       height: auto;
     }
-
     .flight-shot span {
       display: block;
       padding: 10px 14px;
@@ -211,23 +186,19 @@
       font-size: 13px;
       border-top: 1px solid var(--line);
     }
-
     section { padding: 34px 48px; }
     section + section { border-top: 1px solid var(--line); }
-
     h2 {
       margin: 0 0 18px;
       color: var(--navy);
       font-size: 25px;
       letter-spacing: 0;
     }
-
     h3 {
       margin: 0 0 8px;
       color: var(--ink);
       font-size: 18px;
     }
-
     .note {
       padding: 14px 18px;
       border-left: 5px solid var(--gold);
@@ -235,84 +206,70 @@
       color: #47370d;
       margin: 18px 0 0;
     }
-
     .section-intro {
       max-width: 880px;
       color: var(--muted);
       margin: -8px 0 20px;
     }
-
     .grid-2 {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
       gap: 18px;
     }
-
     .option {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 18px;
     }
-
     .option.recommended {
       border-color: rgba(15, 118, 110, .35);
       background: linear-gradient(180deg, #ffffff, var(--mint));
     }
-
     .hotel-gallery {
       margin-top: 18px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
-
     .hotel-photos {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
     }
-
     .hotel-photos header {
       padding: 14px 16px;
       background: var(--soft);
       border-bottom: 1px solid var(--line);
     }
-
     .hotel-photos header strong {
       display: block;
       color: var(--navy);
       font-size: 16px;
     }
-
     .hotel-photos header span {
       color: var(--muted);
       font-size: 13px;
     }
-
     .hotel-photo-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
     }
-
     .hotel-photo {
       border-right: 1px solid var(--line);
       background: #f8fafc;
     }
-
     .hotel-photo:last-child {
       border-right: 0;
     }
-
     .hotel-photo img {
       width: 100%;
       height: 142px;
       object-fit: cover;
       display: block;
     }
-
     .hotel-photo span {
       display: block;
       padding: 9px 10px 11px;
@@ -320,14 +277,12 @@
       font-weight: 800;
       color: var(--navy);
     }
-
     .hotel-links {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 12px;
     }
-
     .hotel-links a {
       display: inline-flex;
       align-items: center;
@@ -339,11 +294,9 @@
       font-weight: 800;
       text-decoration: none;
     }
-
     .hotel-links a.secondary {
       background: var(--teal);
     }
-
     .badge {
       display: inline-block;
       margin-bottom: 10px;
@@ -354,14 +307,11 @@
       font-size: 12px;
       font-weight: 700;
     }
-
     ul {
       margin: 10px 0 0;
       padding-left: 20px;
     }
-
     li + li { margin-top: 6px; }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -370,7 +320,6 @@
       background: #fff;
       border: 1px solid var(--line);
     }
-
     th, td {
       padding: 12px 14px;
       text-align: left;
@@ -378,7 +327,6 @@
       border-bottom: 1px solid var(--line);
       font-size: 14px;
     }
-
     th {
       background: var(--soft);
       color: var(--navy);
@@ -386,9 +334,7 @@
       text-transform: uppercase;
       letter-spacing: .03em;
     }
-
     tr:last-child td { border-bottom: 0; }
-
     .day {
       display: grid;
       grid-template-columns: 120px 1fr;
@@ -396,9 +342,7 @@
       padding: 20px 0;
       border-top: 1px dashed #cbd5e1;
     }
-
     .day:first-of-type { border-top: 0; padding-top: 0; }
-
     .datebox {
       padding: 14px;
       background: var(--navy);
@@ -406,41 +350,34 @@
       border-radius: 14px;
       min-height: 120px;
     }
-
     .datebox strong {
       display: block;
       font-size: 24px;
       line-height: 1.05;
     }
-
     .datebox span {
       display: block;
       margin-top: 8px;
       color: rgba(255,255,255,.78);
       font-size: 13px;
     }
-
     .timeline {
       display: grid;
       grid-template-columns: 92px 1fr;
       gap: 10px 16px;
       margin-bottom: 14px;
     }
-
     .timeline .desc {
       padding-bottom: 10px;
       border-bottom: 1px solid #edf1f7;
     }
-
     .timeline .desc:last-child {
       border-bottom: 0;
     }
-
     .time {
       color: var(--teal);
       font-weight: 800;
     }
-
     .route-title {
       display: flex;
       flex-wrap: wrap;
@@ -448,12 +385,10 @@
       align-items: center;
       margin-bottom: 14px;
     }
-
     .route-title strong {
       font-size: 20px;
       color: var(--navy);
     }
-
     .pill {
       display: inline-flex;
       padding: 4px 9px;
@@ -463,37 +398,31 @@
       font-size: 12px;
       font-weight: 800;
     }
-
     .detail-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
       margin: 14px 0;
     }
-
     .detail-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 14px;
     }
-
     .detail-card h4 {
       margin: 0 0 8px;
       color: var(--navy);
       font-size: 15px;
     }
-
     .small {
       color: var(--muted);
       font-size: 13px;
     }
-
     .money {
       color: var(--teal);
       font-weight: 900;
     }
-
     .route-legs {
       margin: 14px 0;
       background: #fff;
@@ -501,7 +430,6 @@
       border-radius: 14px;
       overflow: hidden;
     }
-
     .route-legs h4 {
       margin: 0;
       padding: 12px 14px;
@@ -509,7 +437,6 @@
       background: var(--soft);
       font-size: 15px;
     }
-
     .leg {
       display: grid;
       grid-template-columns: 1.1fr 110px 1.2fr;
@@ -519,36 +446,30 @@
       align-items: start;
       font-size: 14px;
     }
-
     .leg .duration {
       color: var(--teal);
       font-weight: 900;
       white-space: nowrap;
     }
-
     .choice-table {
       margin: 14px 0;
     }
-
     .choice-table h4 {
       margin: 0 0 8px;
       color: var(--navy);
       font-size: 15px;
     }
-
     .local-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-
     .local-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
     }
-
     .local-card img {
       width: 100%;
       height: 150px;
@@ -556,33 +477,27 @@
       display: block;
       background: #e5eaf1;
     }
-
     .local-card div {
       padding: 14px;
     }
-
     .local-card h3 {
       margin-bottom: 6px;
     }
-
     .category-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-
     .category-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 16px;
     }
-
     .category-card h3 {
       color: var(--navy);
       margin-bottom: 8px;
     }
-
     .category-card .tag {
       display: inline-block;
       margin: 4px 4px 0 0;
@@ -593,110 +508,92 @@
       font-size: 12px;
       font-weight: 800;
     }
-
     .rules-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-
     .rule-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 16px;
     }
-
     .rule-card.good { border-top: 5px solid var(--teal); }
     .rule-card.bad { border-top: 5px solid var(--coral); }
     .rule-card.warn { border-top: 5px solid var(--gold); }
-
     .food {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
-
     .food div {
       padding: 12px;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 12px;
     }
-
     .food strong {
       display: block;
       margin-bottom: 4px;
       color: var(--navy);
     }
-
     .transport {
       background: var(--rose);
       border-left: 5px solid var(--coral);
       padding: 14px 18px;
       margin-top: 14px;
     }
-
     .logic-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-
     .logic {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 16px;
     }
-
     .logic b {
       display: block;
       color: var(--navy);
       margin-bottom: 6px;
     }
-
     .agenda-note {
       display: grid;
       grid-template-columns: 1.2fr .8fr;
       gap: 14px;
       margin-bottom: 22px;
     }
-
     .agenda-note div {
       padding: 16px 18px;
       border-radius: 14px;
       background: #fff;
       border: 1px solid var(--line);
     }
-
     .budget {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
-
     .total {
       background: linear-gradient(135deg, var(--navy), #243f77);
       color: #fff;
       padding: 22px;
       border-radius: 16px;
     }
-
     .total .big {
       display: block;
       margin: 8px 0;
       font-size: 34px;
       font-weight: 900;
     }
-
     .sources {
       font-size: 12px;
       color: var(--muted);
     }
-
     .sources a { color: var(--navy); }
-
     @media (max-width: 820px) {
       .hero, section { padding: 28px 22px; }
       .summary { grid-template-columns: 1fr 1fr; padding: 16px 22px 24px; }
@@ -708,20 +605,50 @@
       .day { grid-template-columns: 1fr; }
       .datebox { min-height: auto; }
     }
-
-
-
     /* Better report design upgrade */
     html { scroll-behavior: smooth; }
     body { background: #dfe6ee; }
-
+    .language-switcher {
+      position: fixed;
+      top: 18px;
+      right: 22px;
+      z-index: 100;
+      display: inline-flex;
+      gap: 4px;
+      padding: 5px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(23,32,51,.14);
+      box-shadow: 0 12px 30px rgba(23,32,51,.16);
+      backdrop-filter: blur(12px);
+    }
+    .language-switcher button {
+      min-width: 74px;
+      min-height: 34px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--navy);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .language-switcher button.active {
+      background: var(--navy);
+      color: #fff;
+    }
+    .page-en { display: none; }
+    body.lang-en .page-zh { display: none; }
+    body.lang-en .page-en { display: block; }
+    body.lang-zh .page-zh { display: block; }
+    body.lang-zh .page-en { display: none; }
     .page {
       width: min(1220px, calc(100% - 28px));
       border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 28px 80px rgba(19, 31, 52, .18);
     }
-
     .hero {
       display: grid;
       grid-template-columns: 1.05fr .95fr;
@@ -730,7 +657,6 @@
       isolation: isolate;
       background: #142033;
     }
-
     .hero::before {
       content: "";
       position: absolute;
@@ -740,29 +666,24 @@
         linear-gradient(90deg, rgba(17, 31, 54, .93) 0%, rgba(17, 31, 54, .82) 42%, rgba(17, 31, 54, .45) 100%),
         url("trip-report/grand-palace.jpg") center / cover no-repeat;
     }
-
     .hero::after { display: none; }
-
     .hero-copy {
       align-self: end;
       padding: 56px 54px 52px;
       position: relative;
       z-index: 1;
     }
-
     .hero-copy h1 {
       max-width: 680px;
       font-size: clamp(38px, 5vw, 66px);
       text-shadow: 0 3px 22px rgba(0,0,0,.26);
     }
-
     .hero-stats {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 22px;
     }
-
     .hero-stats span {
       display: inline-flex;
       align-items: center;
@@ -776,7 +697,6 @@
       color: #fff;
       backdrop-filter: blur(8px);
     }
-
     .hero-media {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -787,7 +707,6 @@
       position: relative;
       z-index: 1;
     }
-
     .hero-media figure {
       margin: 0;
       position: relative;
@@ -797,9 +716,7 @@
       box-shadow: 0 18px 42px rgba(0,0,0,.24);
       background: rgba(255,255,255,.12);
     }
-
     .hero-media figure:first-child { grid-row: span 2; }
-
     .hero-media img {
       width: 100%;
       height: 100%;
@@ -807,7 +724,6 @@
       display: block;
       object-fit: cover;
     }
-
     .hero-media figcaption {
       position: absolute;
       left: 12px;
@@ -821,14 +737,12 @@
       background: rgba(10, 18, 30, .64);
       backdrop-filter: blur(8px);
     }
-
     .summary {
       grid-template-columns: repeat(5, 1fr);
       padding-top: 20px;
       padding-bottom: 20px;
       background: #ffffff;
     }
-
     .summary div {
       min-height: 96px;
       border-left: 0;
@@ -836,12 +750,10 @@
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(23,32,51,.05);
     }
-
     .summary div:nth-child(2) { border-top-color: var(--gold); }
     .summary div:nth-child(3) { border-top-color: var(--navy); }
     .summary div:nth-child(4) { border-top-color: var(--coral); }
     .summary div:nth-child(5) { border-top-color: #6d5bd0; }
-
     .toc {
       display: flex;
       flex-wrap: wrap;
@@ -854,7 +766,6 @@
       z-index: 20;
       backdrop-filter: blur(12px);
     }
-
     .toc a {
       display: inline-flex;
       align-items: center;
@@ -868,25 +779,65 @@
       font-size: 13px;
       font-weight: 900;
     }
-
     .toc a:hover { background: var(--mint); }
-
+    .inline-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      margin-left: 7px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .inline-link.alt { background: var(--teal); }
+    .inline-link.gold { background: var(--gold); }
+    .activity-mini {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 10px;
+      align-items: center;
+      min-width: 260px;
+    }
+    .activity-mini img {
+      width: 86px;
+      height: 62px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #e5eaf1;
+    }
+    .activity-mini strong {
+      display: block;
+      color: var(--navy);
+      line-height: 1.35;
+    }
+    .activity-mini .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    .activity-mini .inline-link {
+      margin-left: 0;
+    }
     section {
       counter-increment: report-section;
       padding-top: 42px;
       padding-bottom: 42px;
     }
-
     .page { counter-reset: report-section; }
     section.sources { counter-increment: none; }
-
     section > h2 {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 12px;
     }
-
     section > h2::before {
       content: counter(report-section, decimal-leading-zero);
       flex: 0 0 auto;
@@ -901,21 +852,17 @@
       font-size: 13px;
       font-weight: 900;
     }
-
     .sources > h2::before { content: "REF"; }
-
     .executive {
       background:
         linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
     }
-
     .decision-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
       margin: 20px 0;
     }
-
     .decision-card {
       padding: 18px;
       border: 1px solid var(--line);
@@ -923,12 +870,10 @@
       background: #fff;
       box-shadow: 0 12px 26px rgba(23,32,51,.06);
     }
-
     .decision-card.featured {
       border-color: rgba(15,118,110,.28);
       background: linear-gradient(180deg, #fff, #edf9f6);
     }
-
     .decision-card .mini-label {
       display: inline-flex;
       padding: 4px 10px;
@@ -939,33 +884,26 @@
       font-weight: 900;
       margin-bottom: 10px;
     }
-
     .decision-card.featured .mini-label { background: var(--teal); }
-
     .decision-card p { margin: 8px 0 0; }
-
     .overview-board {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
       margin-top: 18px;
     }
-
     .overview-panel {
       padding: 18px;
       border: 1px solid var(--line);
       border-radius: 18px;
       background: #fff;
     }
-
     .overview-panel h3 { color: var(--navy); }
-
     .quick-route {
       display: grid;
       gap: 10px;
       margin-top: 12px;
     }
-
     .quick-route div {
       display: grid;
       grid-template-columns: 72px 1fr 118px;
@@ -977,35 +915,27 @@
       background: #f9fbfe;
       font-size: 14px;
     }
-
     .quick-route strong { color: var(--navy); }
     .quick-route span:last-child { color: var(--teal); font-weight: 900; }
-
     .visual-strip {
       padding-top: 24px;
       padding-bottom: 24px;
       border-bottom: 1px solid var(--line);
     }
-
     .photo-card {
       border-radius: 18px;
       box-shadow: 0 10px 24px rgba(23,32,51,.06);
     }
-
     .photo-card img { height: 140px; }
-
     .option, .flight-card, .detail-card, .local-card, .category-card, .rule-card, .hotel-photos {
       box-shadow: 0 10px 24px rgba(23,32,51,.05);
     }
-
     .choice-table, .budget > div:first-child {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
     }
-
     .choice-table table { min-width: 820px; }
     .budget table { min-width: 700px; }
-
     .hotel-spec {
       margin: 18px 0 4px;
       padding: 18px;
@@ -1014,16 +944,13 @@
       border: 1px solid var(--line);
       box-shadow: 0 10px 24px rgba(23,32,51,.05);
     }
-
     .hotel-spec table { margin-top: 10px; }
-
     .checklist-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 14px;
       margin-top: 18px;
     }
-
     .check-card {
       padding: 16px;
       border: 1px solid var(--line);
@@ -1031,14 +958,12 @@
       background: #fff;
       box-shadow: 0 10px 24px rgba(23,32,51,.05);
     }
-
     .check-card h3 {
       color: var(--navy);
       display: flex;
       gap: 8px;
       align-items: center;
     }
-
     .check-card h3::before {
       content: "";
       width: 10px;
@@ -1047,7 +972,6 @@
       background: var(--teal);
       flex: 0 0 auto;
     }
-
     .report-note {
       margin-top: 18px;
       padding: 16px 18px;
@@ -1055,12 +979,14 @@
       background: #10233f;
       color: #fff;
     }
-
     .report-note strong { color: #fff; }
-
     @media (max-width: 980px) {
       .hero, .summary, .decision-grid, .overview-board, .checklist-grid {
         grid-template-columns: 1fr;
+      }
+      .language-switcher {
+        top: 10px;
+        right: 10px;
       }
       .hero-media {
         min-height: auto;
@@ -1073,12 +999,10 @@
       .toc { position: static; }
       .quick-route div { grid-template-columns: 1fr; }
     }
-
     @media print {
       .toc { position: static; }
       .hero-media figcaption { background: rgba(0,0,0,.72); }
     }
-
     @media print {
       body { background: #fff; }
       .page {
@@ -1093,7 +1017,12 @@
   </style>
 </head>
 <body>
+  <div class="language-switcher" aria-label="Language switcher">
+    <button type="button" data-lang="zh" class="active" aria-pressed="true">中文</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
   <main class="page">
+  <main class="page page-zh">
     <header class="hero">
       <div class="hero-copy">
         <div class="eyebrow">Bangkok 4D3N Travel Proposal</div>
@@ -1112,7 +1041,6 @@
         <figure><img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk"><figcaption>Mahanakhon 夜景活动</figcaption></figure>
       </div>
     </header>
-
     <div class="summary">
       <div><span class="label">人数</span><span class="value">6 pax｜朋友/家庭团</span></div>
       <div><span class="label">航班</span><span class="value">DMK 09:20 抵达 / 19:45 回程</span></div>
@@ -1120,7 +1048,6 @@
       <div><span class="label">住宿方向</span><span class="value">3房公寓式酒店，首推 Sukhumvit</span></div>
       <div><span class="label">预算风格</span><span class="value">中高性价比，不踩雷</span></div>
     </div>
-
     <nav class="toc" aria-label="报告目录">
       <a href="#recommendation">推荐结论</a>
       <a href="#flight">航班</a>
@@ -1133,7 +1060,6 @@
       <a href="#prep">行前确认</a>
       <a href="#budget">预算</a>
     </nav>
-
     <div class="visual-strip">
       <figure class="photo-card"><img src="trip-report/grand-palace.jpg" alt="Bangkok Grand Palace"><span>大皇宫 / 玉佛寺</span></figure>
       <figure class="photo-card"><img src="trip-report/restaurant-rongros.jpg" alt="Wat Arun Bangkok"><span>Wat Arun 郑王庙</span></figure>
@@ -1142,11 +1068,11 @@
       <figure class="photo-card"><img src="trip-report/restaurant-yaowarat.jpg" alt="Yaowarat Road Bangkok"><span>Yaowarat 唐人街</span></figure>
       <figure class="photo-card"><img src="trip-report/activity-mahanakhon.jpg" alt="King Power Mahanakhon SkyWalk"><span>Mahanakhon 夜景</span></figure>
     </div>
-
     <section id="recommendation" class="executive">
       <h2>先给客人的推荐结论</h2>
       <p class="section-intro">这页可以放在最前面给客人快速看懂：为什么这样排、住哪里最好、预算大概多少、晚上有什么活动可以选。详细行程和替换选择放在后面，方便讨论时逐项调整。</p>
-
+      <h2>先给我们看的推荐结论</h2>
+      <p class="section-intro">这页可以放在最前面，让大家快速看懂：为什么这样排、住哪里最适合、预算大概多少、晚上有什么活动可以选。详细行程和替换选择放在后面，方便我们一起讨论和调整。</p>
       <div class="decision-grid">
         <article class="decision-card featured">
           <span class="mini-label">最推荐方案</span>
@@ -1157,14 +1083,15 @@
           <span class="mini-label">升级方案</span>
           <h3>Ascott / Marriott + Mahanakhon / Dinner Cruise</h3>
           <p>适合预算较高、想要报告看起来更高级的客人。住宿和夜间活动更体面，但总预算会明显上升。</p>
+          <p>适合我们想住得更舒服、预算可以拉高一点的情况。住宿和夜间活动更体面，但总预算会明显上升。</p>
         </article>
         <article class="decision-card">
           <span class="mini-label">预算控制</span>
           <h3>保留 Centre Point，减少高票价活动</h3>
           <p>如果客人觉得预算高，优先删 Mahanakhon 或把部分正餐换成商场餐厅 / food court，不建议删交通缓冲。</p>
+          <p>如果大家觉得预算高，优先删 Mahanakhon 或把部分正餐换成商场餐厅 / food court，不建议删交通缓冲。</p>
         </article>
       </div>
-
       <div class="overview-board">
         <article class="overview-panel">
           <h3>一页路线总览</h3>
@@ -1177,6 +1104,7 @@
         </article>
         <article class="overview-panel">
           <h3>销售说明重点</h3>
+          <h3>行程安排重点</h3>
           <ul>
             <li><strong>为什么不放 Tuk tuk：</strong>6人坐不了，容易分车，价格也不稳定；只适合短程体验。</li>
             <li><strong>为什么住宿首推 Sukhumvit：</strong>吃喝、按摩、商场、叫 Grab 都方便，第一次来曼谷比较稳。</li>
@@ -1185,13 +1113,13 @@
           </ul>
         </article>
       </div>
-
       <div class="report-note"><strong>建议对客人说：</strong>“这版先以舒服、不踩雷和交通现实为主。酒店给 4 个选择，行程每一天都有替代餐厅和活动，如果预算或体力需要调整，可以直接从选择表里面换。”</div>
+      <div class="report-note"><strong>内部备注：</strong>这版先以舒服、不踩雷和交通现实为主。酒店给 4 个选择，行程每一天都有替代餐厅和活动，如果预算或体力需要调整，可以直接从选择表里面换。</div>
     </section>
-
     <section id="flight">
       <h2>航班资料｜按截图价格</h2>
       <p class="section-intro">以下根据机票截图整理，方便客人一眼看到航班时间、机场、总价和注意事项。价格以截图为准，正式预订前需再次确认余位与票价。</p>
+      <p class="section-intro">以下根据机票截图整理，方便大家一眼看到航班时间、机场、总价和注意事项。价格以截图为准，正式预订前需再次确认余位与票价。</p>
       <div class="flight-layout">
         <div class="flight-cards">
           <article class="flight-card">
@@ -1204,7 +1132,6 @@
               <div><span class="label">飞行时间</span><strong>约 2h 20m｜Direct</strong></div>
             </div>
           </article>
-
           <article class="flight-card">
             <h3><span>回程</span><span class="badge">AirAsia AK889</span></h3>
             <div class="route">Bangkok (DMK) → Kuala Lumpur (KUL)</div>
@@ -1215,7 +1142,6 @@
               <div><span class="label">飞行时间</span><strong>约 2h 20m｜Direct</strong></div>
             </div>
           </article>
-
           <article class="flight-card">
             <h3><span>价格与备注</span><span class="badge" style="background: var(--gold)">6 pax</span></h3>
             <div class="flight-meta">
@@ -1225,16 +1151,15 @@
               <div><span class="label">截图显示</span><strong>Cabin baggage 7kg</strong></div>
             </div>
             <div class="note">注意：截图显示 Economy、direct、reschedulable、non-refundable。若客人需要托运行李、选位、餐食或保险，需另外加购。</div>
+            <div class="note">注意：截图显示 Economy、direct、reschedulable、non-refundable。若我们需要托运行李、选位、餐食或保险，需另外加购。</div>
           </article>
         </div>
-
         <figure class="flight-shot">
           <img src="trip-report/flight-summary.png" alt="AirAsia KUL to Bangkok DMK flight summary screenshot">
           <span>机票截图参考：KUL ⇄ DMK，AirAsia，6 pax，总价 RM 4,268.34。</span>
         </figure>
       </div>
     </section>
-
     <section id="hotels">
       <h2>先推荐什么住宿</h2>
       <div class="grid-2">
@@ -1252,7 +1177,6 @@
             <a class="secondary" href="https://www.centrepointsukhumvit.com/accommodation/three-bedrooms-grand-suite/">3房房型</a>
           </div>
         </article>
-
         <article class="option">
           <span class="badge" style="background: var(--gold)">升级备选</span>
           <h3>Ascott Embassy Sathorn Bangkok</h3>
@@ -1267,7 +1191,6 @@
             <a class="secondary" href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok/apartment-types">房型列表</a>
           </div>
         </article>
-
         <article class="option">
           <span class="badge" style="background: #334155">家庭备选</span>
           <h3>Shama Lakeview Asoke Bangkok</h3>
@@ -1282,11 +1205,11 @@
             <a class="secondary" href="https://www.shama.com/lakeview-asoke/accommodation">房型列表</a>
           </div>
         </article>
-
         <article class="option">
           <span class="badge" style="background: #7c3aed">高级家庭型</span>
           <h3>Marriott Executive Apartments Sukhumvit Park</h3>
           <p><strong>建议订：Three Bedroom Apartment / Suite。</strong>品牌感强，公寓式房间 + 酒店设施，适合想住得更舒服但不想太商务的客人。</p>
+          <p><strong>建议订：Three Bedroom Apartment / Suite。</strong>品牌感强，公寓式房间 + 酒店设施，适合我们想住得更舒服但不想太商务的情况。</p>
           <ul>
             <li>靠 Phrom Phong / Sukhumvit 24，近 EmQuartier、Emporium、Benchasiri Park。</li>
             <li>设施通常更完整，适合有小孩、长辈，或想要酒店服务感的 6 人团。</li>
@@ -1298,7 +1221,6 @@
           </div>
         </article>
       </div>
-
       <div class="hotel-gallery">
         <article class="hotel-photos">
           <header>
@@ -1312,11 +1234,11 @@
             <figure class="hotel-photo"><img src="trip-report/centrepoint-pool.jpg" alt="Centre Point Sukhumvit 10 pool"><span>Pool / 环境设施</span></figure>
           </div>
         </article>
-
         <article class="hotel-photos">
           <header>
             <strong>Ascott Embassy Sathorn Bangkok</strong>
             <span>升级备选：质感更高级，适合预算较高客人</span>
+            <span>升级备选：质感更高级，适合预算较高的我们</span>
             <div class="hotel-links"><a href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok">官网</a><a class="secondary" href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok/apartment-types">房型</a></div>
           </header>
           <div class="hotel-photo-grid">
@@ -1325,7 +1247,6 @@
             <figure class="hotel-photo"><img src="trip-report/ascott-pool.jpg" alt="Ascott Embassy Sathorn Bangkok pool"><span>Pool / 公共设施</span></figure>
           </div>
         </article>
-
         <article class="hotel-photos">
           <header>
             <strong>Shama Lakeview Asoke Bangkok</strong>
@@ -1338,7 +1259,6 @@
             <figure class="hotel-photo"><img src="trip-report/shama-pool.jpg" alt="Shama Lakeview Asoke pool"><span>Pool / 公共设施</span></figure>
           </div>
         </article>
-
         <article class="hotel-photos">
           <header>
             <strong>Marriott Executive Apartments Sukhumvit Park</strong>
@@ -1352,7 +1272,6 @@
           </div>
         </article>
       </div>
-
       <div class="choice-table">
         <h4>4 家酒店怎么选｜差异比较</h4>
         <table>
@@ -1363,13 +1282,14 @@
             <tr><td>Centre Point Sukhumvit 10</td><td>Sukhumvit 10 / Asok-Nana</td><td>第一次来曼谷、想方便吃喝按摩</td><td>位置好、生活机能强、3房适合 6 人、性价比最稳</td><td>质感不是最高级，部分设施偏实用型</td><td>中等，首推</td></tr>
             <tr><td>Shama Lakeview Asoke</td><td>Sukhumvit 16 / Asoke</td><td>家庭团、朋友团想要公寓感</td><td>空间大、客厅厨房舒服、适合晚上买宵夜回房间聊天</td><td>位置比 Centre Point 稍微里面一点，叫 Grab 更方便</td><td>中高，家庭感强</td></tr>
             <tr><td>Marriott Executive Apartments Sukhumvit Park</td><td>Sukhumvit 24 / Phrom Phong</td><td>重视品牌、设施、服务的客人</td><td>品牌信任度高、设施完整、适合长辈/小孩、整体更体面</td><td>预算明显更高，离 Asok 核心稍远</td><td>高，舒适型</td></tr>
+            <tr><td>Marriott Executive Apartments Sukhumvit Park</td><td>Sukhumvit 24 / Phrom Phong</td><td>重视品牌、设施、服务的同行成员</td><td>品牌信任度高、设施完整、适合长辈/小孩、整体更体面</td><td>预算明显更高，离 Asok 核心稍远</td><td>高，舒适型</td></tr>
             <tr><td>Ascott Embassy Sathorn</td><td>Sathorn / Silom</td><td>想要高级安静、去 Mahanakhon/Chinatown 顺</td><td>质感高级、空间大、商务公寓感强，适合预算较高团</td><td>离 Sukhumvit 夜生活/Terminal 21 较远</td><td>高，升级型</td></tr>
           </tbody>
         </table>
       </div>
-
       <div class="hotel-spec">
         <h4>酒店规格速看｜更方便和客人解释差异</h4>
+        <h4>酒店规格速看｜更方便大家比较差异</h4>
         <table>
           <thead><tr><th>酒店</th><th>建议房型 / 面积</th><th>6人适合度</th><th>最明显卖点</th><th>订房前确认</th></tr></thead>
           <tbody>
@@ -1380,7 +1300,6 @@
           </tbody>
         </table>
       </div>
-
       <div class="choice-table">
         <h4>住宿设施备注｜订房前建议确认</h4>
         <table>
@@ -1399,12 +1318,10 @@
           </tbody>
         </table>
       </div>
-
       <div class="note">
         订房建议：优先选可取消、含早餐可加分；备注 6人同行、需要足够 bedding。Pratunam 可购物但塞车明显，这次不放第一推荐。
       </div>
     </section>
-
     <section id="transport">
       <h2>交通标准</h2>
       <div class="transport">
@@ -1421,11 +1338,9 @@
         </tbody>
       </table>
     </section>
-
     <section id="agenda">
       <h2>4天3夜 Detailed Agenda</h2>
       <p class="section-intro">这版按 6 人同行来排：早上尽量避开人潮和塞车，午餐给 2-3 个可替换选择，晚上安排比较有气氛但不太折腾的地点。所有市区移动默认用 GrabVan；如果叫不到 Van，就拆 GrabCar x 2。</p>
-
       <div class="agenda-note">
         <div>
           <h3>行程设计逻辑</h3>
@@ -1436,7 +1351,6 @@
           <p>GrabVan 优先，GrabCar x 2 备用。Tuk tuk 不作为正式交通：6人坐不了、要分车、价格也不稳定。老城区只在 Wat Pho 到 Wat Arun 用短程渡轮，属于景点连接，不是 tuk tuk。</p>
         </div>
       </div>
-
       <article class="day">
         <div class="datebox"><strong>Day 1</strong><span>1月4日｜抵达曼谷 + Siam 轻逛 + ICONSIAM 河景</span></div>
         <div>
@@ -1455,7 +1369,6 @@
             <div class="time">17:30</div><div class="desc"><strong>Grab 去 ICONSIAM。</strong>傍晚到比较刚好，可以看河边夜景、室内水景、SookSiam 小吃区，也适合第一晚拍团体照。</div>
             <div class="time">20:30</div><div class="desc"><strong>回酒店或按摩。</strong>若住 Sukhumvit，可安排酒店附近 60-90 分钟 foot massage；若大家累了就直接休息。</div>
           </div>
-
           <div class="route-legs">
             <h4>移动时间参考</h4>
             <div class="leg"><span>DMK Airport → 酒店 Sukhumvit / Sathorn</span><span class="duration">45-75 分钟</span><span>机场接机用 GrabVan，行李多不要拆太多车。</span></div>
@@ -1464,7 +1377,6 @@
             <div class="leg"><span>酒店 → ICONSIAM</span><span class="duration">35-60 分钟</span><span>傍晚过河方向会慢，建议 17:30 前后出发。</span></div>
             <div class="leg"><span>ICONSIAM → 酒店</span><span class="duration">35-70 分钟</span><span>晚餐后叫车点可能排队，预留等车时间。</span></div>
           </div>
-
           <div class="choice-table">
             <h4>Day 1 选择表：午餐 / 活动 / 晚餐怎么选</h4>
             <table>
@@ -1480,7 +1392,6 @@
               </tbody>
             </table>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card">
               <h4>午餐选择</h4>
@@ -1499,14 +1410,12 @@
               </div>
             </div>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card"><h4>注意事项</h4><ul><li>第一天不要安排 floating market 或远郊，太累。</li><li>ICONSIAM 回程可能塞，叫车点要看 app 指示，不要临时在大门口乱等。</li><li>若行李多，机场到酒店一定优先 GrabVan。</li></ul></div>
             <div class="detail-card"><h4>今日预算</h4><p>交通约 <span class="money">THB 1,600-2,800 / 6人</span>；餐饮看选择约 <span class="money">THB 5,000-8,500 / 6人</span>；Jim Thompson 门票另算。</p></div>
           </div>
         </div>
       </article>
-
       <article class="day">
         <div class="datebox"><strong>Day 2</strong><span>1月5日｜大皇宫 + 卧佛寺 + 郑王庙 + 唐人街</span></div>
         <div>
@@ -1527,7 +1436,6 @@
             <div class="time">18:00</div><div class="desc"><strong>Grab 去 Yaowarat Chinatown。</strong>晚餐主打街边美食和海鲜；6人建议先选一间主餐，再分头买小吃，避免一直排队。</div>
             <div class="time">21:00</div><div class="desc"><strong>回酒店。</strong>若还有体力，可安排酒店附近按摩；不建议太晚才从唐人街临时找车，价格会浮动。</div>
           </div>
-
           <div class="route-legs">
             <h4>移动时间参考</h4>
             <div class="leg"><span>酒店 → The Grand Palace</span><span class="duration">35-60 分钟</span><span>早上出发较稳；若 09:30 后才走，容易遇到市区塞车。</span></div>
@@ -1538,7 +1446,6 @@
             <div class="leg"><span>酒店 → Yaowarat Chinatown</span><span class="duration">25-50 分钟</span><span>晚餐时段塞车明显，宁愿早点出发。</span></div>
             <div class="leg"><span>Yaowarat → 酒店</span><span class="duration">30-60 分钟</span><span>21:00 后比较容易叫车，但热门路口仍会慢。</span></div>
           </div>
-
           <div class="choice-table">
             <h4>Day 2 选择表：老城区餐厅与晚餐路线</h4>
             <table>
@@ -1552,13 +1459,14 @@
                 <tr><td>晚餐</td><td>Yaowarat 街边小吃线</td><td>回酒店约 30-60 分钟</td><td>最有当地感，适合边走边吃；6人要约集合点。</td></tr>
                 <tr><td>晚餐</td><td>T&K Seafood / 店内用餐</td><td>回酒店约 30-60 分钟</td><td>6人坐下来点菜更舒服，适合不想一直排小吃。</td></tr>
                 <tr><td>晚间娱乐</td><td>Rajadamnern Muay Thai 泰拳</td><td>从 Yaowarat 约 20-35 分钟</td><td>曼谷最经典娱乐之一，现场气氛强；适合想体验泰国本地夜间活动。</td></tr>
+                <tr><td>晚间娱乐</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从 Yaowarat 约 20-35 分钟</td><td>曼谷最经典娱乐之一，现场气氛强；适合想体验泰国本地夜间活动。</td></tr>
                 <tr><td>晚间娱乐</td><td>Asiatique + Calypso Cabaret</td><td>从 Yaowarat 约 25-45 分钟</td><td>比较游客向但出名，适合想看表演、又不想去太复杂夜生活的团。</td></tr>
                 <tr><td>晚间娱乐</td><td>Chao Phraya Dinner Cruise</td><td>从老城区/ICONSIAM 约 20-40 分钟</td><td>河景晚餐 + 游船，适合家庭团；要提前订位，天气好体验更佳。</td></tr>
+                <tr><td>晚间娱乐</td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya Dinner Cruise"><div><strong>Chao Phraya Dinner Cruise</strong><div class="links"><a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从老城区/ICONSIAM 约 20-40 分钟</td><td>河景晚餐 + 游船，适合家庭团；要提前订位，天气好体验更佳。</td></tr>
                 <tr><td>晚间娱乐</td><td>Sky Bar：Lebua / Tichuca / Octave</td><td>从 Yaowarat 约 25-50 分钟</td><td>曼谷很出名的夜景酒吧；需注意 dress code，不适合穿拖鞋短裤。</td></tr>
               </tbody>
             </table>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card">
               <h4>午餐选择</h4>
@@ -1577,14 +1485,12 @@
               </div>
             </div>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card"><h4>今日重点</h4><ul><li>大皇宫不要相信门口“今天没开”的搭讪，直接走官方入口。</li><li>寺庙区拍照好看，但非常晒，下午安排回酒店休息是必要的。</li><li>Wat Arun 上下楼梯偏陡，不适合穿太滑的鞋。</li></ul></div>
             <div class="detail-card"><h4>今日预算</h4><p>大皇宫、Wat Pho、Wat Arun 门票合计约 <span class="money">THB 6,000 / 6人上下</span>；交通约 <span class="money">THB 2,000-3,500</span>；餐饮约 <span class="money">THB 8,000-12,000</span>。</p></div>
           </div>
         </div>
       </article>
-
       <article class="day">
         <div class="datebox"><strong>Day 3</strong><span>1月6日｜Ayutthaya 大城府一日游 + 夜景/美食二选一</span></div>
         <div>
@@ -1605,7 +1511,6 @@
             <div class="time">17:15</div><div class="desc"><strong>回曼谷。</strong>回程抓 1.5-2.5 小时，晚高峰可能更久。车上休息，晚上只安排一个轻松选项。</div>
             <div class="time">20:00</div><div class="desc"><strong>二选一：</strong>想看夜景就 Mahanakhon SkyWalk；想吃东西就 Banthat Thong 美食街。不要两个都硬排。</div>
           </div>
-
           <div class="route-legs">
             <h4>移动时间参考</h4>
             <div class="leg"><span>酒店 → Ayutthaya / Wat Mahathat</span><span class="duration">90-120 分钟</span><span>早上出发最稳；同车包全天，不建议分开叫车。</span></div>
@@ -1616,7 +1521,6 @@
             <div class="leg"><span>Wat Chaiwatthanaram → 曼谷市区</span><span class="duration">90-150 分钟</span><span>遇到晚高峰会更久，晚上只排一个轻松活动。</span></div>
             <div class="leg"><span>酒店 → Mahanakhon / Banthat Thong</span><span class="duration">20-45 分钟</span><span>回到酒店后看体力二选一，不建议两个都去。</span></div>
           </div>
-
           <div class="choice-table">
             <h4>Day 3 选择表：大城府路线怎么取舍</h4>
             <table>
@@ -1624,19 +1528,20 @@
               <tbody>
                 <tr><td>标准版</td><td>Wat Mahathat + Wat Phra Si Sanphet + 午餐 + Wat Chaiwatthanaram</td><td>全天约 10-11 小时</td><td>最平衡，有经典照片也不会太赶。</td></tr>
                 <tr><td>完整版</td><td>标准版 + Bang Pa-In Palace</td><td>多 60-90 分钟</td><td>适合体力好、想看宫殿建筑的客人。</td></tr>
+                <tr><td>完整版</td><td>标准版 + Bang Pa-In Palace</td><td>多 60-90 分钟</td><td>适合体力好、想看宫殿建筑的大家。</td></tr>
                 <tr><td>轻松版</td><td>只去 2 个遗迹 + 河边午餐 + 咖啡</td><td>省 60-90 分钟</td><td>适合怕热、有长辈或不想太晒。</td></tr>
                 <tr><td>午餐</td><td>Baan Mai Rim Nam</td><td>去 Wat Chaiwatthanaram 约 20-35 分钟</td><td>河边泰菜，团体点菜舒服。</td></tr>
                 <tr><td>午餐</td><td>Sala Ayutthaya</td><td>去 Wat Chaiwatthanaram 约 15-30 分钟</td><td>景观和质感好，适合预算高一点。</td></tr>
                 <tr><td>晚上</td><td>Mahanakhon SkyWalk</td><td>从酒店约 20-45 分钟</td><td>夜景很出名，但票价较高，天气不好就取消。</td></tr>
                 <tr><td>晚上</td><td>Banthat Thong 美食街</td><td>从酒店约 20-40 分钟</td><td>更当地、选择多，预算比 Mahanakhon 低。</td></tr>
                 <tr><td>晚上</td><td>Rajadamnern Muay Thai 泰拳</td><td>从酒店约 25-55 分钟</td><td>如果 Day 2 没看泰拳，可以放 Day 3；但大城府回来会累，适合体力好的团。</td></tr>
+                <tr><td>晚上</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>从酒店约 25-55 分钟</td><td>如果 Day 2 没看泰拳，可以放 Day 3；但大城府回来会累，适合体力好的团。</td></tr>
                 <tr><td>晚上</td><td>Jodd Fairs / Ratchada 夜市</td><td>从酒店约 20-45 分钟</td><td>游客友好、选择多、拍照容易，比大型表演轻松。</td></tr>
                 <tr><td>晚上</td><td>RCA / Tichuca / Octave 夜生活</td><td>从酒店约 20-50 分钟</td><td>适合年轻团想体验 Bangkok nightlife；需确认年龄、dress code、预算。</td></tr>
                 <tr><td>晚上</td><td>酒店附近 Thai Massage</td><td>步行或 Grab 5-20 分钟</td><td>最实际的选择，大城府走一天后最舒服，也最不会拖太晚。</td></tr>
               </tbody>
             </table>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card">
               <h4>午餐选择</h4>
@@ -1655,14 +1560,12 @@
               </div>
             </div>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card"><h4>路线建议</h4><ul><li>不要排太多寺庙：3个主点已经足够，照片不会重复，体力也比较刚好。</li><li>若团里有老人/小孩，直接取消 Bang Pa-In Palace，改咖啡休息。</li><li>司机要先讲好等候时间和回程地点，避免每站沟通。</li></ul></div>
             <div class="detail-card"><h4>今日预算</h4><p>包车/Grab Rent 约 <span class="money">THB 4,500-6,500</span>；景点门票约 <span class="money">THB 1,500-3,000</span>；若加 Mahanakhon，另抓 <span class="money">THB 6,000-7,500 / 6人</span>。</p></div>
           </div>
         </div>
       </article>
-
       <article class="day">
         <div class="datebox"><strong>Day 4</strong><span>1月7日｜购物 + 按摩 + 机场</span></div>
         <div>
@@ -1682,7 +1585,6 @@
             <div class="time">16:30</div><div class="desc"><strong>GrabVan 去 DMK。</strong>预留至少 2.5-3 小时到机场，因为 Bangkok 晚高峰不稳定。</div>
             <div class="time">19:45</div><div class="desc"><strong>DMK 飞回 KUL。</strong>AirAsia 国际线建议提早到柜台，避免行李队伍影响。</div>
           </div>
-
           <div class="route-legs">
             <h4>移动时间参考</h4>
             <div class="leg"><span>酒店 → Erawan Shrine / CentralWorld</span><span class="duration">15-35 分钟</span><span>Sukhumvit / Sathorn 出发都算顺，早上比下午好走。</span></div>
@@ -1692,7 +1594,6 @@
             <div class="leg"><span>购物区 → 酒店拿行李</span><span class="duration">20-45 分钟</span><span>下午路况开始变慢，建议 15:45 前回到酒店。</span></div>
             <div class="leg"><span>酒店 → DMK Airport</span><span class="duration">60-100 分钟</span><span>16:30 出发比较保险；雨天或事故可能再拉长。</span></div>
           </div>
-
           <div class="choice-table">
             <h4>Day 4 选择表：购物 / 按摩 / 机场时间控制</h4>
             <table>
@@ -1708,7 +1609,6 @@
               </tbody>
             </table>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card">
               <h4>午餐选择</h4>
@@ -1727,19 +1627,17 @@
               </div>
             </div>
           </div>
-
           <div class="detail-grid">
             <div class="detail-card"><h4>最后一天不要做什么</h4><ul><li>不要排水上市场、动物园、远郊咖啡厅。</li><li>不要 16:30 后才从市区出发去 DMK。</li><li>不要把所有购物放在机场，DMK 选择不如市区。</li></ul></div>
             <div class="detail-card"><h4>今日预算</h4><p>交通约 <span class="money">THB 1,200-2,200</span>；午餐约 <span class="money">THB 2,000-4,000</span>；按摩约 <span class="money">THB 2,400-5,400 / 6人</span>，视店和时长。</p></div>
           </div>
         </div>
       </article>
-
       <div class="note">
         不先排 Chatuchak：2027年1月4-7日是周一到周四，不是周末。Damnoen Saduak 水上市场也不放主线，因为太早、太远、商业感较重，4天3夜不划算。若客人强烈想要水上市场，可以把 Day 3 改成 Maeklong Railway Market + Amphawa / Damnoen Saduak，但会牺牲 Ayutthaya。
+        不先排 Chatuchak：2027年1月4-7日是周一到周四，不是周末。Damnoen Saduak 水上市场也不放主线，因为太早、太远、商业感较重，4天3夜不划算。如果大家真的想去水上市场，可以把 Day 3 改成 Maeklong Railway Market + Amphawa / Damnoen Saduak，但会牺牲 Ayutthaya。
       </div>
     </section>
-
     <section id="food">
       <h2>餐厅 / 美食照片选择卡</h2>
       <p class="section-intro">这些是行程里常被拿来替换的餐厅和美食点。实际当天可按排队、天气、体力和预算来换。</p>
@@ -1752,7 +1650,6 @@
             <p class="small"><strong>下一站：</strong>去 Wat Arun 约 10-20 分钟｜<strong>适合：</strong>想要景观和仪式感。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-supanniga.jpg" alt="Supanniga Eating Room Bangkok">
           <div>
@@ -1761,7 +1658,6 @@
             <p class="small"><strong>下一站：</strong>去 Wat Arun 约 10-20 分钟｜<strong>适合：</strong>不想踩雷的午餐。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-tha-maharaj.jpg" alt="Tha Maharaj Bangkok">
           <div>
@@ -1770,7 +1666,6 @@
             <p class="small"><strong>下一站：</strong>去 Wat Arun 约 15-25 分钟｜<strong>适合：</strong>长辈/家庭团。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-yaowarat.jpg" alt="Yaowarat Bangkok street food">
           <div>
@@ -1779,7 +1674,6 @@
             <p class="small"><strong>下一站：</strong>回酒店约 30-60 分钟｜<strong>适合：</strong>想感受热闹夜市。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-banthat-thong.jpg" alt="Banthat Thong Bangkok street food">
           <div>
@@ -1788,7 +1682,6 @@
             <p class="small"><strong>下一站：</strong>回酒店约 20-45 分钟｜<strong>适合：</strong>不想再买门票的晚上。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-goang.jpg" alt="Go-Ang Pratunam chicken rice">
           <div>
@@ -1799,7 +1692,6 @@
         </article>
       </div>
     </section>
-
     <section id="night">
       <h2>夜间娱乐照片选择卡</h2>
       <p class="section-intro">Day 2 或 Day 3 晚上建议只选一个主活动。若白天走很多，选美食街或 cruise；若想体验曼谷娱乐，选泰拳、cabaret 或 rooftop。</p>
@@ -1808,117 +1700,204 @@
           <img src="trip-report/activity-muay-thai.jpg" alt="Bangkok Muay Thai">
           <div>
             <h3>Rajadamnern Muay Thai</h3>
+            <h3>Rajadamnern Muay Thai <a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></h3>
             <p>曼谷代表性娱乐，现场气氛强，适合想体验泰国本地夜间活动。</p>
             <p class="small"><strong>需时：</strong>2.5-3.5 小时｜<strong>移动：</strong>从酒店约 25-55 分钟。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya dinner cruise">
           <div>
             <h3>Chao Phraya Dinner Cruise</h3>
             <p>河景晚餐 + 游船，适合家庭团和第一次来曼谷的客人。</p>
+            <h3>Chao Phraya Dinner Cruise <a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></h3>
+            <p>河景晚餐 + 游船，适合家庭团和第一次来曼谷的大家。</p>
             <p class="small"><strong>需时：</strong>2-2.5 小时｜<strong>移动：</strong>从 ICONSIAM / 河边码头衔接最顺。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/activity-calypso.jpg" alt="Calypso Cabaret Bangkok">
           <div>
             <h3>Calypso Cabaret</h3>
+            <h3>Calypso Cabaret <a class="inline-link" href="https://www.calypsocabaret.com/" target="_blank" rel="noopener">官网</a></h3>
             <p>游客向但出名，适合想看表演又不想去太复杂夜生活的团。</p>
             <p class="small"><strong>需时：</strong>2-3 小时｜<strong>移动：</strong>从 Yaowarat 约 25-45 分钟。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/activity-tichuca.jpg" alt="Bangkok rooftop bar">
           <div>
             <h3>Rooftop Bar</h3>
+            <h3>Rooftop Bar <a class="inline-link" href="https://www.tichuca.co/" target="_blank" rel="noopener">Tichuca</a><a class="inline-link alt" href="https://www.marriott.com/en-us/hotels/bkkms-bangkok-marriott-hotel-sukhumvit/dining/" target="_blank" rel="noopener">Octave</a></h3>
             <p>Tichuca、Octave、Lebua 都是曼谷热门夜景选择，适合朋友团拍照。</p>
             <p class="small"><strong>需时：</strong>1.5-2.5 小时｜<strong>注意：</strong>dress code，拖鞋短裤可能不适合。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk Bangkok">
           <div>
             <h3>Mahanakhon SkyWalk</h3>
+            <h3>Mahanakhon SkyWalk <a class="inline-link" href="https://kingpowermahanakhon.co.th/" target="_blank" rel="noopener">官网</a></h3>
             <p>曼谷出名高空夜景，适合第一次来、想要比较有记忆点的活动。</p>
             <p class="small"><strong>需时：</strong>1.5-2 小时｜<strong>移动：</strong>从 Sathorn/Silom 最顺。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-banthat-thong.jpg" alt="Bangkok night street food">
           <div>
             <h3>夜市 / 美食街</h3>
+            <h3>夜市 / 美食街 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Banthat+Thong+Food+Street+Bangkok" target="_blank" rel="noopener">地图</a></h3>
             <p>Jodd Fairs、Banthat Thong 都适合不想太累又想吃东西的晚上。</p>
             <p class="small"><strong>需时：</strong>1.5-3 小时｜<strong>适合：</strong>预算弹性、大家自由买小吃。</p>
           </div>
         </article>
       </div>
     </section>
-
     <section id="local">
       <h2>当地特色活动｜可替换加插</h2>
       <p class="section-intro">这些不是普通购物点，比较有曼谷当地感。建议不要全部塞进 4天3夜，而是按客人兴趣替换：想文化就选料理课/花市，想刺激就选 Muay Thai，想拍生活感就选水上社区或长尾船。</p>
+      <p class="section-intro">这些不是普通购物点，比较有曼谷当地感。建议不要全部塞进 4天3夜，而是按大家兴趣替换：想文化就选料理课/花市，想刺激就选 Muay Thai，想拍生活感就选水上社区或长尾船。</p>
       <div class="local-grid">
         <article class="local-card">
           <img src="trip-report/activity-dinner-cruise.jpg" alt="Bangkok longtail boat canal tour">
           <div>
             <h3>Thonburi 长尾船水巷</h3>
+            <h3>Thonburi 长尾船水巷 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thonburi+Canal+Tour+Bangkok" target="_blank" rel="noopener">地图</a></h3>
             <p>看曼谷河边老社区、木屋、水上生活，比单纯坐观光船更本地。适合替换 Day 1 下午或 Day 2 Wat Arun 后。</p>
             <p class="small"><strong>需时：</strong>约 1.5-2.5 小时｜<strong>移动：</strong>从 ICONSIAM / Tha Tien pier 约 10-25 分钟衔接。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Stadium Bangkok Muay Thai">
           <div>
             <h3>Rajadamnern Muay Thai</h3>
+            <h3>Rajadamnern Muay Thai <a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></h3>
             <p>泰拳现场气氛很泰国，适合晚上想体验当地娱乐而不是只逛 mall。建议确认比赛日期和票价后再排。</p>
             <p class="small"><strong>需时：</strong>约 2.5-3.5 小时｜<strong>移动：</strong>从 Sukhumvit / Sathorn 约 25-55 分钟。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-supanniga.jpg" alt="Thai cooking class">
           <div>
             <h3>泰式料理课</h3>
+            <h3>泰式料理课 <a class="inline-link" href="https://www.blueelephant.com/bangkok/cooking-school/" target="_blank" rel="noopener">参考</a></h3>
             <p>学做 Tom Yum、Pad Thai、Green Curry 等，适合亲子/朋友团。比只吃餐厅更有参与感，通常含市场导览或食材讲解。</p>
             <p class="small"><strong>需时：</strong>约 3-4 小时｜<strong>适合替换：</strong>Day 1 下午或 Day 4 早上购物。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/restaurant-tha-maharaj.jpg" alt="Pak Khlong Talat Bangkok Flower Market">
           <div>
             <h3>Pak Khlong Talat 花市</h3>
+            <h3>Pak Khlong Talat 花市 <a class="inline-link" href="https://www.tourismthailand.org/Articles/the-adventure-through-bangkok-s-chinatown" target="_blank" rel="noopener">资料</a></h3>
             <p>曼谷大型花市，颜色丰富、很有生活感。适合 Day 2 唐人街前后加插，不会像景点那么游客化。</p>
             <p class="small"><strong>需时：</strong>45-75 分钟｜<strong>移动：</strong>从 Wat Pho / Yaowarat 约 10-25 分钟。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/grand-palace.jpg" alt="Bangkok Amulet Market">
           <div>
             <h3>Amulet Market 佛牌市场</h3>
             <p>更 local 的市集体验，适合对泰国信仰文化有兴趣的客人。地点靠近大皇宫，可短时间加插。</p>
+            <h3>Amulet Market 佛牌市场 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Amulet+Market+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>更 local 的市集体验，适合对泰国信仰文化有兴趣的大家。地点靠近大皇宫，可短时间加插。</p>
             <p class="small"><strong>需时：</strong>45-60 分钟｜<strong>移动：</strong>从大皇宫 / Tha Maharaj 约 5-15 分钟。</p>
           </div>
         </article>
-
         <article class="local-card">
           <img src="trip-report/centrepoint-room.jpg" alt="Wat Pho Thai Massage">
           <div>
             <h3>Wat Pho 传统泰式按摩</h3>
+            <h3>Wat Pho 传统泰式按摩 <a class="inline-link" href="https://watpho.org/en/contact/plan" target="_blank" rel="noopener">官网</a></h3>
             <p>Wat Pho 是泰式按摩传统相关地点，比普通按摩店更有故事。若 Day 2 寺庙线不赶，可以加 60 分钟体验。</p>
             <p class="small"><strong>需时：</strong>60-90 分钟｜<strong>移动：</strong>就在 Wat Pho 区域，之后去午餐约 5-15 分钟。</p>
           </div>
         </article>
       </div>
-
+      <div class="local-grid" style="margin-top: 14px">
+        <article class="local-card">
+          <img src="trip-report/grand-palace.jpg" alt="Thai costume photoshoot Bangkok">
+          <div>
+            <h3>泰服拍照 / Wat Arun Photo Session <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Thai+costume+rental" target="_blank" rel="noopener">地图</a></h3>
+            <p>在 Wat Arun 周边租泰服拍照，画面很曼谷，也比普通打卡更有记忆点。适合想拍团体照或女生多的组合。</p>
+            <p class="small"><strong>需时：</strong>2-3 小时｜<strong>适合放：</strong>Day 2 Wat Arun 下午，把回酒店休息稍微延后。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/activity-calypso.jpg" alt="Thai Khon performance Bangkok">
+          <div>
+            <h3>Khon 泰式假面舞剧 <a class="inline-link" href="https://salachalermkrung.com/?c=news&cid=90&m=detail" target="_blank" rel="noopener">官网</a></h3>
+            <p>比普通表演更传统文化，适合想看泰国古典舞剧、服装和音乐的人。若当天有演出，可放在 Day 2 老城区后。</p>
+            <p class="small"><strong>需时：</strong>约 1-2 小时｜<strong>移动：</strong>从 Grand Palace / Yaowarat 区域较顺。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/restaurant-yaowarat.jpg" alt="Talat Noi Song Wat old Bangkok walk">
+          <div>
+            <h3>Talat Noi / Song Wat 老街散步 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Talat+Noi+Song+Wat+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>老曼谷街区、壁画、咖啡店、仓库建筑和中泰社区感比较强，适合喜欢拍街景、不想只逛商场的人。</p>
+            <p class="small"><strong>需时：</strong>1.5-2.5 小时｜<strong>适合放：</strong>Day 2 唐人街前，或 Day 1 下午替换 Siam。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/activity-muay-thai.jpg" alt="Bangkok Muay Thai beginner class">
+          <div>
+            <h3>Muay Thai 体验课 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Muay+Thai+beginner+class+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>不只是看比赛，而是试踢、试拳、拍训练照。适合年轻团或想要一点运动体验的人，强度可选轻松版。</p>
+            <p class="small"><strong>需时：</strong>1.5-2.5 小时｜<strong>适合放：</strong>Day 1 下午或 Day 4 上午，不建议放大城府当天。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/centrepoint-room.jpg" alt="Thai herbal compress workshop">
+          <div>
+            <h3>泰式草药球 / 香氛手作 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+herbal+compress+workshop+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>做 Thai herbal compress、香包或精油类小手作，比较轻松，也可以当手信。适合不想一直走景点的半天。</p>
+            <p class="small"><strong>需时：</strong>1.5-3 小时｜<strong>适合放：</strong>Day 1 下午或 Day 4 购物前后。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/restaurant-tha-maharaj.jpg" alt="Bangkok local market fruit tasting">
+          <div>
+            <h3>Or Tor Kor / 当地市场水果线 <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Or+Tor+Kor+Market+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>试泰国水果、椰子甜品、熟食和市场小吃，比较生活化，也适合买一点当天吃的水果。</p>
+            <p class="small"><strong>需时：</strong>1-2 小时｜<strong>适合放：</strong>Day 4 购物前，或 Day 1 如果不想逛 Siam。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/activity-dinner-cruise.jpg" alt="Khlong Lat Mayom floating market">
+          <div>
+            <h3>Khlong Lat Mayom 水上市场 <a class="inline-link" href="https://www.tourismthailand.org/Attraction/khlong-lat-mayom-floating-market" target="_blank" rel="noopener">资料</a></h3>
+            <p>比 Damnoen Saduak 更靠近曼谷，也更像本地周末吃东西的地方。可是这次 1月4-7日是周一到周四，不建议硬排。</p>
+            <p class="small"><strong>需时：</strong>半天｜<strong>适合：</strong>如果行程改到周末，才考虑替换 Day 3 或 Day 4。</p>
+          </div>
+        </article>
+        <article class="local-card">
+          <img src="trip-report/restaurant-banthat-thong.jpg" alt="Bangkok Thai dessert route">
+          <div>
+            <h3>泰式甜品 / Café Route <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+dessert+cafe+Bangkok" target="_blank" rel="noopener">地图</a></h3>
+            <p>芒果糯米饭、椰奶甜品、泰奶、toast、老城咖啡店，可以当 Day 2 下午或 Day 3 晚上轻松替代。</p>
+            <p class="small"><strong>需时：</strong>1.5-2.5 小时｜<strong>适合：</strong>不想喝酒、不想按摩，只想轻松吃甜品聊天。</p>
+          </div>
+        </article>
+      </div>
+      <div class="choice-table">
+        <h4>更多当地特色活动库｜按兴趣挑</h4>
+        <table>
+          <thead><tr><th>类型</th><th>活动</th><th>建议放哪天</th><th>需时 / 移动</th><th>适合谁</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>拍照</td><td><div class="activity-mini"><img src="trip-report/grand-palace.jpg" alt="Wat Arun 泰服拍照"><div><strong>Wat Arun 泰服拍照</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Thai+costume+rental" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 2 下午</td><td>2-3 小时；就在 Wat Arun 区域</td><td>喜欢拍照、想要团体照</td><td>会压缩回酒店休息时间；衣服和妆发需提前预订。</td></tr>
+            <tr><td>文化</td><td><div class="activity-mini"><img src="trip-report/activity-calypso.jpg" alt="Khon 泰式假面舞剧"><div><strong>Khon 泰式假面舞剧</strong><div class="links"><a class="inline-link" href="https://salachalermkrung.com/?c=news&cid=90&m=detail" target="_blank" rel="noopener">官网</a></div></div></div></td><td>Day 2 晚上</td><td>1-2 小时；老城区/唐人街衔接较顺</td><td>想看传统文化，不想只逛街</td><td>需确认演出日期和票价，不是每天都一定适合。</td></tr>
+            <tr><td>老街</td><td><div class="activity-mini"><img src="trip-report/restaurant-yaowarat.jpg" alt="Talat Noi / Song Wat 散步"><div><strong>Talat Noi / Song Wat 散步</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Talat+Noi+Song+Wat+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 1 下午或 Day 2 傍晚</td><td>1.5-2.5 小时；从 Chinatown 很近</td><td>喜欢街景、咖啡、老建筑</td><td>比商场更有生活感，但天气热时会累。</td></tr>
+            <tr><td>运动</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Muay Thai 体验课"><div><strong>Muay Thai 体验课</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Muay+Thai+beginner+class+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 1 下午 / Day 4 上午</td><td>1.5-2.5 小时；看训练馆地点</td><td>年轻团、想体验不只看比赛</td><td>大城府当天不建议排，体力会太满。</td></tr>
+            <tr><td>手作</td><td><div class="activity-mini"><img src="trip-report/centrepoint-room.jpg" alt="泰式草药球 / 香氛手作"><div><strong>泰式草药球 / 香氛手作</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+herbal+compress+workshop+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 1 下午 / Day 4 购物前后</td><td>1.5-3 小时；多在市区室内</td><td>女生团、亲子、怕晒的人</td><td>轻松、有成品带走，适合下雨备选。</td></tr>
+            <tr><td>市场</td><td><div class="activity-mini"><img src="trip-report/restaurant-tha-maharaj.jpg" alt="Or Tor Kor / 当地水果市场"><div><strong>Or Tor Kor / 当地水果市场</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Or+Tor+Kor+Market+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 4 早上</td><td>1-2 小时；从市区约 25-45 分钟</td><td>想吃水果、小吃、看当地市场</td><td>比观光夜市更生活化，适合买水果当天吃。</td></tr>
+            <tr><td>水上生活</td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Khlong Lat Mayom 水上市场"><div><strong>Khlong Lat Mayom 水上市场</strong><div class="links"><a class="inline-link" href="https://www.tourismthailand.org/Attraction/khlong-lat-mayom-floating-market" target="_blank" rel="noopener">资料</a></div></div></div></td><td>周末才建议</td><td>半天；市区过去约 40-70 分钟</td><td>想看本地周末市场</td><td>这次日期是周一到周四，不放主线；若改周末可考虑。</td></tr>
+            <tr><td>甜品</td><td><div class="activity-mini"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Thai Dessert / Café Route"><div><strong>Thai Dessert / Café Route</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+dessert+cafe+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 2 下午或 Day 3 晚上</td><td>1.5-2.5 小时；看区域安排</td><td>不喝酒、不想太累、想聊天</td><td>可放 Song Wat、Talat Noi、Banthat Thong 或 Siam。</td></tr>
+            <tr><td>河边</td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Local Ferry Hop / Chao Phraya 短线"><div><strong>Local Ferry Hop / Chao Phraya 短线</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Chao+Phraya+local+ferry+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 1 或 Day 2</td><td>1-2 小时；码头之间移动</td><td>想看河边生活，不想坐正式 cruise</td><td>比 dinner cruise 更轻，但天气和码头动线要看好。</td></tr>
+            <tr><td>夜生活</td><td><div class="activity-mini"><img src="trip-report/activity-tichuca.jpg" alt="Live Music / Jazz Bar"><div><strong>Live Music / Jazz Bar</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Bangkok+jazz+bar+live+music" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 2 或 Day 3 晚上</td><td>1.5-3 小时；从酒店约 20-50 分钟</td><td>想体验曼谷夜晚但不想 clubbing</td><td>注意年龄、dress code、当天演出时间。</td></tr>
+          </tbody>
+        </table>
+      </div>
       <div class="choice-table">
         <h4>特色活动替换建议</h4>
         <table>
@@ -1927,15 +1906,16 @@
             <tr><td>更本地生活感</td><td>长尾船水巷 / 花市</td><td>Day 1 Jim Thompson 或 Day 2 下午咖啡</td><td>增加 1-2 小时，但照片和体验更特别。</td></tr>
             <tr><td>晚上不想只逛街</td><td>Muay Thai</td><td>Day 3 Mahanakhon / Banthat Thong</td><td>需要订票，晚上会比较晚回酒店。</td></tr>
             <tr><td>亲子/朋友互动</td><td>泰式料理课</td><td>Day 4 购物半天 或 Day 1 下午</td><td>占 3-4 小时，适合不爱一直走景点的团。</td></tr>
+            <tr><td>亲子/朋友互动</td><td><div class="activity-mini"><img src="trip-report/restaurant-supanniga.jpg" alt="泰式料理课"><div><strong>泰式料理课</strong><div class="links"><a class="inline-link" href="https://www.blueelephant.com/bangkok/cooking-school/" target="_blank" rel="noopener">参考</a></div></div></div></td><td>Day 4 购物半天 或 Day 1 下午</td><td>占 3-4 小时，适合不爱一直走景点的团。</td></tr>
             <tr><td>文化信仰路线</td><td>佛牌市场 / Wat Pho 按摩</td><td>Day 2 大皇宫老城区</td><td>地点顺路，但需要减少咖啡或购物时间。</td></tr>
           </tbody>
         </table>
       </div>
     </section>
-
     <section id="activity-options">
       <h2>不去按摩的话｜活动替代建议</h2>
       <p class="section-intro">如果客人不想按摩，可以用这些活动替代。建议不要每天晚上都排重活动，Day 2 或 Day 3 选其中一个就好。</p>
+      <p class="section-intro">如果大家不想按摩，可以用这些活动替代。建议不要每天晚上都排重活动，Day 2 或 Day 3 选其中一个就好。</p>
       <div class="choice-table">
         <h4>活动选择表</h4>
         <table>
@@ -1949,14 +1929,22 @@
             <tr><td>泰式料理课</td><td>Day 1 下午或 Day 4 早上</td><td>约 3-4 小时；看课程地点，酒店过去约 20-45 分钟</td><td>亲子团、朋友团、喜欢互动体验</td><td>比纯购物更特别；会占半天时间。</td></tr>
             <tr><td>长尾船水巷 / Thonburi Canal</td><td>Day 1 下午或 Day 2 下午</td><td>约 1.5-2.5 小时；从河边码头约 10-25 分钟</td><td>想看 local 生活、喜欢拍照</td><td>比普通观光船更有当地感；怕晒要避开正午。</td></tr>
             <tr><td>花市 + 咖啡 / dessert route</td><td>Day 2 唐人街前后</td><td>约 1-2 小时；从 Wat Pho / Yaowarat 约 10-25 分钟</td><td>女生团、喜欢拍照、想看生活市场</td><td>轻松、便宜、不太占预算。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Rajadamnern Muay Thai 泰拳"><div><strong>Rajadamnern Muay Thai 泰拳</strong><div class="links"><a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>Day 2 或 Day 3 晚上</td><td>活动约 2.5-3.5 小时；从酒店约 25-55 分钟</td><td>想体验泰国本地娱乐、年轻团、男生团</td><td>曼谷代表性娱乐，建议提前订票；结束会比较晚。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya Dinner Cruise"><div><strong>Chao Phraya Dinner Cruise</strong><div class="links"><a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>Day 1 或 Day 2 晚上</td><td>约 2-2.5 小时；从 ICONSIAM / 河边码头衔接最顺</td><td>家庭团、第一次来曼谷、想轻松看夜景</td><td>天气好体验佳；餐食不是最顶级，但氛围好。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/activity-calypso.jpg" alt="Calypso Cabaret / Asiatique"><div><strong>Calypso Cabaret / Asiatique</strong><div class="links"><a class="inline-link" href="https://www.calypsocabaret.com/" target="_blank" rel="noopener">官网</a></div></div></div></td><td>Day 2 晚上</td><td>约 2-3 小时；从 Yaowarat 约 25-45 分钟</td><td>想看表演、不想去太复杂夜生活的团</td><td>游客向但出名，适合当作轻松娱乐。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/activity-tichuca.jpg" alt="Rooftop Bar"><div><strong>Rooftop Bar</strong><div class="links"><a class="inline-link" href="https://www.tichuca.co/" target="_blank" rel="noopener">Tichuca</a><a class="inline-link alt" href="https://www.marriott.com/en-us/hotels/bkkms-bangkok-marriott-hotel-sukhumvit/dining/" target="_blank" rel="noopener">Octave</a><a class="inline-link gold" href="https://lebua.com/restaurants-bars/sky-bar/" target="_blank" rel="noopener">Lebua</a></div></div></div></td><td>Day 2 或 Day 3 晚上</td><td>约 1.5-2.5 小时；从酒店约 20-50 分钟</td><td>情侣、朋友团、想拍夜景</td><td>注意 dress code；Lebua 更正式，Tichuca 气氛更年轻。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Jodd Fairs / Banthat Thong 美食街"><div><strong>Jodd Fairs / Banthat Thong 美食街</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Jodd+Fairs+Bangkok" target="_blank" rel="noopener">Jodd</a><a class="inline-link alt" href="https://www.google.com/maps/search/?api=1&query=Banthat+Thong+Food+Street+Bangkok" target="_blank" rel="noopener">Banthat</a></div></div></div></td><td>Day 3 晚上</td><td>约 1.5-3 小时；从酒店约 20-45 分钟</td><td>想吃小吃、预算不想太高、自由活动</td><td>比正式餐厅轻松，适合大城府回来后弹性走。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/restaurant-supanniga.jpg" alt="泰式料理课"><div><strong>泰式料理课</strong><div class="links"><a class="inline-link" href="https://www.blueelephant.com/bangkok/cooking-school/" target="_blank" rel="noopener">参考</a></div></div></div></td><td>Day 1 下午或 Day 4 早上</td><td>约 3-4 小时；看课程地点，酒店过去约 20-45 分钟</td><td>亲子团、朋友团、喜欢互动体验</td><td>比纯购物更特别；会占半天时间。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="长尾船水巷 / Thonburi Canal"><div><strong>长尾船水巷 / Thonburi Canal</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thonburi+Canal+Tour+Bangkok" target="_blank" rel="noopener">地图</a></div></div></div></td><td>Day 1 下午或 Day 2 下午</td><td>约 1.5-2.5 小时；从河边码头约 10-25 分钟</td><td>想看 local 生活、喜欢拍照</td><td>比普通观光船更有当地感；怕晒要避开正午。</td></tr>
+            <tr><td><div class="activity-mini"><img src="trip-report/restaurant-tha-maharaj.jpg" alt="花市 + 咖啡 / dessert route"><div><strong>花市 + 咖啡 / dessert route</strong><div class="links"><a class="inline-link" href="https://www.tourismthailand.org/Articles/the-adventure-through-bangkok-s-chinatown" target="_blank" rel="noopener">花市</a><a class="inline-link alt" href="https://www.google.com/maps/search/?api=1&query=Thai+dessert+cafe+Bangkok" target="_blank" rel="noopener">甜品</a></div></div></div></td><td>Day 2 唐人街前后</td><td>约 1-2 小时；从 Wat Pho / Yaowarat 约 10-25 分钟</td><td>女生团、喜欢拍照、想看生活市场</td><td>轻松、便宜、不太占预算。</td></tr>
           </tbody>
         </table>
       </div>
     </section>
-
     <section id="local-list">
       <h2>当地特色清单｜吃喝买玩</h2>
       <p class="section-intro">这部分可以当作客人的 free & easy 参考，也可以让他们提前知道曼谷有什么值得试。不是全部都要塞进行程，按兴趣挑即可。</p>
+      <p class="section-intro">这部分可以当作大家的 free & easy 参考，也可以让他们提前知道曼谷有什么值得试。不是全部都要塞进行程，按兴趣挑即可。</p>
       <div class="category-grid">
         <article class="category-card">
           <h3>当地特色活动</h3>
@@ -1990,7 +1978,6 @@
         </article>
       </div>
     </section>
-
     <section id="rules">
       <h2>必做事项 / 不可以做 / 注意事项</h2>
       <div class="rules-grid">
@@ -2026,10 +2013,10 @@
         </article>
       </div>
     </section>
-
     <section id="prep">
       <h2>出发前确认 Checklist</h2>
       <p class="section-intro">这部分让报告更像正式出团资料：不只是行程，也把客人出发前最容易漏掉的东西列清楚。</p>
+      <p class="section-intro">这部分让报告更像正式出团资料：不只是行程，也把我们出发前最容易漏掉的东西列清楚。</p>
       <div class="checklist-grid">
         <article class="check-card">
           <h3>订房 / 机票</h3>
@@ -2065,7 +2052,6 @@
         </article>
       </div>
     </section>
-
     <section id="budget">
       <h2>预算概算</h2>
       <p class="section-intro">以下以 6 人同行估算，汇率暂按 RM1 ≈ THB8.18。餐厅、Grab 动态价格、酒店房价会浮动，所以用区间比较合理。个人购物、酒水、托运行李加购不包含在内。</p>
@@ -2087,15 +2073,16 @@
               <tr><td>按摩 / SIM / 杂费</td><td>RM 600 - 1,200</td><td>按摩 1次、SIM/eSIM、小费、临时用品</td></tr>
             </tbody>
           </table>
-
           <table style="margin-top: 14px">
             <thead>
               <tr><th>价格调整</th><th>影响</th><th>建议</th></tr>
             </thead>
             <tbody>
               <tr><td>住宿升级 Ascott</td><td>总预算 +RM 2,700 - 3,600</td><td>适合想要更高级空间与设施的客人</td></tr>
+              <tr><td>住宿升级 Ascott</td><td>总预算 +RM 2,700 - 3,600</td><td>适合我们想要更高级空间与设施时</td></tr>
               <tr><td>取消 Mahanakhon</td><td>总预算 -RM 750 - 950</td><td>如果天气不好或怕高，直接改美食街/按摩</td></tr>
               <tr><td>餐厅全部选商场/food court</td><td>总预算 -RM 800 - 1,300</td><td>预算型客人可这样调，但体验会普通一点</td></tr>
+              <tr><td>餐厅全部选商场/food court</td><td>总预算 -RM 800 - 1,300</td><td>想控制预算可以这样调，但体验会普通一点</td></tr>
               <tr><td>Day 3 不去 Ayutthaya</td><td>总预算 -RM 700 - 1,000</td><td>可改曼谷市区深度购物/咖啡/按摩</td></tr>
             </tbody>
           </table>
@@ -2105,11 +2092,31 @@
           <span class="big">RM 14,800 - 20,400</span>
           <p>平均每人约 <strong>RM 2,470 - 3,400</strong>。这个版本已经把 GrabVan、Ayutthaya 包车、较舒服的餐厅和 Mahanakhon 可选项算进去。</p>
           <p><strong>较推荐报价方式：</strong>先以 Centre Point + Mahanakhon optional 报给客人；若客人说预算高，再删 Mahanakhon 或把部分餐厅换成 food court。</p>
+          <p><strong>建议预算调整方式：</strong>先以 Centre Point + Mahanakhon optional 作为标准版；若大家觉得预算高，再删 Mahanakhon 或把部分餐厅换成 food court。</p>
           <p style="color: rgba(255,255,255,.78)">汇率按 2026年9月24日约 RM1 ≈ THB8.18 估算，实际以换汇当天为准。</p>
         </div>
       </div>
     </section>
-
+  </main>
+  <main class="page page-en">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Bangkok 4D3N Travel Proposal</div>
+        <h1>Bangkok 4D3N<br>Group Trip Proposal</h1>
+        <p class="subtitle">4 - 7 January 2027｜6 pax｜KUL ⇄ DMK｜Designed around famous but reliable places, practical transport, strong photo value, and a clear budget range.</p>
+        <div class="hero-stats">
+          <span>6 pax</span>
+          <span>4 Jan - 7 Jan 2027</span>
+          <span>GrabVan / 2 GrabCars</span>
+          <span>Top stay: Centre Point</span>
+        </div>
+      </div>
+      <div class="hero-media" aria-label="Bangkok proposal highlights">
+        <figure><img src="trip-report/grand-palace.jpg" alt="Bangkok Grand Palace"><figcaption>Grand Palace / Wat Phra Kaew</figcaption></figure>
+        <figure><img src="trip-report/restaurant-rongros.jpg" alt="Wat Arun river view"><figcaption>Wat Arun riverside lunch</figcaption></figure>
+        <figure><img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk"><figcaption>Mahanakhon night view</figcaption></figure>
+      </div>
+    </header>
     <section class="sources" id="sources">
       <h2>资料来源</h2>
       <p><strong>资料更新日期：</strong>2026年9月25日。价格、开放时间、房型与设施仍需在正式预订前重新确认。</p>
@@ -2135,8 +2142,374 @@
         <a href="https://www.bnm.gov.my/web/guest/latest-rates">Bank Negara Malaysia 外汇牌价</a>。
         图片为公开网页图源，仅作行程视觉参考，实际景观会受天气、季节与现场人流影响。
       </p>
+    <div class="summary">
+      <div><span class="label">Group Size</span><span class="value">6 pax｜Friends / family</span></div>
+      <div><span class="label">Flights</span><span class="value">Arrive DMK 09:20 / Return 19:45</span></div>
+      <div><span class="label">Transport</span><span class="value">GrabVan first, 2 GrabCars as backup</span></div>
+      <div><span class="label">Stay Style</span><span class="value">3-bedroom serviced apartment</span></div>
+      <div><span class="label">Budget Style</span><span class="value">Comfortable, good value, low risk</span></div>
+    </div>
+    <nav class="toc" aria-label="English report menu">
+      <a href="#en-recommendation">Recommendation</a>
+      <a href="#en-flight">Flights</a>
+      <a href="#en-hotels">Hotels</a>
+      <a href="#en-transport">Transport</a>
+      <a href="#en-agenda">Agenda</a>
+      <a href="#en-food">Food</a>
+      <a href="#en-night">Nightlife</a>
+      <a href="#en-local">Local Picks</a>
+      <a href="#en-prep">Checklist</a>
+      <a href="#en-budget">Budget</a>
+    </nav>
+    <div class="visual-strip">
+      <figure class="photo-card"><img src="trip-report/grand-palace.jpg" alt="Bangkok Grand Palace"><span>Grand Palace / Emerald Buddha</span></figure>
+      <figure class="photo-card"><img src="trip-report/restaurant-rongros.jpg" alt="Wat Arun Bangkok"><span>Wat Arun riverside</span></figure>
+      <figure class="photo-card"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya dinner cruise"><span>Chao Phraya river night</span></figure>
+      <figure class="photo-card"><img src="trip-report/grand-palace.jpg" alt="Ayutthaya"><span>Ayutthaya day trip</span></figure>
+      <figure class="photo-card"><img src="trip-report/restaurant-yaowarat.jpg" alt="Yaowarat Bangkok"><span>Yaowarat Chinatown</span></figure>
+      <figure class="photo-card"><img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk"><span>Mahanakhon SkyWalk</span></figure>
+    </div>
+    <section id="en-recommendation" class="executive">
+      <h2>Recommended Plan For Our Group</h2>
+      <p class="section-intro">This first page helps everyone in the group understand the route quickly: where we should stay, why the route works, what the budget looks like, and which activities can be swapped in or out.</p>
+      <div class="decision-grid">
+        <article class="decision-card featured">
+          <span class="mini-label">Best Overall</span>
+          <h3>Centre Point Sukhumvit 10 + Old City Highlights + Ayutthaya</h3>
+          <p>The most balanced choice for a first Bangkok trip: good apartment space, convenient location, classic sightseeing, and enough free time for meals and shopping.</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">Upgrade</span>
+          <h3>Ascott / Marriott + Mahanakhon or Dinner Cruise</h3>
+          <p>Better if we want a more premium hotel feel and stronger evening activities. The experience is more polished, but the total budget increases.</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">Budget Control</span>
+          <h3>Keep Centre Point, reduce high-ticket activities</h3>
+          <p>If the budget feels high, remove Mahanakhon or replace a few restaurants with mall dining. Transport buffer should stay because Bangkok traffic is unpredictable.</p>
+        </article>
+      </div>
+      <div class="overview-board">
+        <article class="overview-panel">
+          <h3>Route At A Glance</h3>
+          <div class="quick-route">
+            <div><strong>Day 1</strong><span>Arrive at DMK, leave luggage at hotel, Siam / Jim Thompson, ICONSIAM riverside night view.</span><span>Easy arrival</span></div>
+            <div><strong>Day 2</strong><span>Grand Palace, Wat Pho, Wat Arun, Yaowarat Chinatown, optional Muay Thai / cruise.</span><span>Classic Bangkok</span></div>
+            <div><strong>Day 3</strong><span>Ayutthaya day trip, then choose Mahanakhon SkyWalk or Banthat Thong food street.</span><span>History + photos</span></div>
+            <div><strong>Day 4</strong><span>Erawan Shrine, CentralWorld / Big C / Platinum, short massage or cafe break, leave for DMK at 16:30.</span><span>Shopping + return</span></div>
+          </div>
+        </article>
+        <article class="overview-panel">
+          <h3>Why This Plan Works</h3>
+          <ul>
+            <li><strong>No tuk tuk as main transport:</strong> 6 pax cannot fit comfortably, pricing is inconsistent, and the group will be split.</li>
+            <li><strong>Sukhumvit is the safest first recommendation:</strong> easy food, massage, malls, and Grab pickup points.</li>
+            <li><strong>Ayutthaya is on Day 3:</strong> no long-distance trip immediately after landing.</li>
+            <li><strong>Budget is shown as a range:</strong> final prices depend on hotel availability, tickets, meals, and exchange rate.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="en-flight">
+      <h2>Flight Summary</h2>
+      <p class="section-intro">Based on the flight screenshot. Final fare, seats, and add-ons should be checked again before booking.</p>
+      <div class="flight-layout">
+        <div class="flight-cards">
+          <article class="flight-card">
+            <h3><span>Outbound</span><span class="badge">AirAsia AK880</span></h3>
+            <div class="route">Kuala Lumpur (KUL) → Bangkok (DMK)</div>
+            <div class="flight-meta">
+              <div><span class="label">Date</span><strong>Mon, 4 Jan 2027</strong></div>
+              <div><span class="label">Time</span><strong>08:00 - 09:20</strong></div>
+              <div><span class="label">Airport</span><strong>KUL Terminal 2 → DMK Terminal 1</strong></div>
+              <div><span class="label">Flight</span><strong>Approx. 2h 20m｜Direct</strong></div>
+            </div>
+          </article>
+          <article class="flight-card">
+            <h3><span>Return</span><span class="badge">AirAsia AK889</span></h3>
+            <div class="route">Bangkok (DMK) → Kuala Lumpur (KUL)</div>
+            <div class="flight-meta">
+              <div><span class="label">Date</span><strong>Thu, 7 Jan 2027</strong></div>
+              <div><span class="label">Time</span><strong>19:45 - 23:05</strong></div>
+              <div><span class="label">Airport</span><strong>DMK Terminal 1 → KUL Terminal 2</strong></div>
+              <div><span class="label">Flight</span><strong>Approx. 2h 20m｜Direct</strong></div>
+            </div>
+          </article>
+          <article class="flight-card">
+            <h3><span>Fare Note</span><span class="badge" style="background: var(--gold)">6 pax</span></h3>
+            <div class="flight-meta">
+              <div><span class="label">Total</span><strong>RM 4,268.34</strong></div>
+              <div><span class="label">Per pax</span><strong>Approx. RM 711.39</strong></div>
+              <div><span class="label">Shown</span><strong>Taxes included</strong></div>
+              <div><span class="label">Baggage</span><strong>Cabin baggage 7kg</strong></div>
+            </div>
+            <div class="note">Checked baggage, seat selection, meals, and travel insurance should be added separately if required.</div>
+          </article>
+        </div>
+        <figure class="flight-shot">
+          <img src="trip-report/flight-summary.png" alt="AirAsia flight summary screenshot">
+          <span>Reference screenshot: KUL ⇄ DMK, AirAsia, 6 pax, total RM 4,268.34.</span>
+        </figure>
+      </div>
+    </section>
+    <section id="en-hotels">
+      <h2>Hotel Recommendations</h2>
+      <p class="section-intro">All four options are suitable for a 6-person group. The main difference is location, room feel, service level, and budget.</p>
+      <div class="grid-2">
+        <article class="option recommended">
+          <span class="badge">Top Pick</span>
+          <h3>Centre Point Hotel Sukhumvit 10</h3>
+          <p><strong>Recommended room:</strong> Three Bedrooms Grand Suite. Best balance of price, space, and location for 6 pax.</p>
+          <ul><li>Convenient for Terminal 21, Asok, Nana, food, massage, and Grab pickups.</li><li>Good for staying together in one unit instead of splitting into three rooms.</li><li>Estimated room budget: <strong>RM1,400 - RM2,000 / night</strong>.</li></ul>
+          <div class="hotel-links"><a href="https://www.centrepointsukhumvit.com/">Official site</a><a class="secondary" href="https://www.centrepointsukhumvit.com/accommodation/three-bedrooms-grand-suite/">3-bedroom room</a></div>
+        </article>
+        <article class="option">
+          <span class="badge" style="background: var(--gold)">Premium Quiet</span>
+          <h3>Ascott Embassy Sathorn Bangkok</h3>
+          <p><strong>Recommended room:</strong> Three-Bedroom Premier / Executive. A more premium serviced-apartment feel.</p>
+          <ul><li>Good for Sathorn, Silom, Mahanakhon, riverside, and Chinatown routes.</li><li>Best if our group wants a higher-end environment.</li><li>Estimated room budget: <strong>RM2,300 - RM3,200 / night</strong>.</li></ul>
+          <div class="hotel-links"><a href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok">Official site</a><a class="secondary" href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok/apartment-types">Room types</a></div>
+        </article>
+        <article class="option">
+          <span class="badge" style="background: #334155">Family Style</span>
+          <h3>Shama Lakeview Asoke Bangkok</h3>
+          <p><strong>Recommended room:</strong> Three Bedroom Lakeview / Three Bedroom Apartment. Apartment-style and spacious.</p>
+          <ul><li>Good for groups who want a living room and kitchen.</li><li>Works well for buying snacks or supper back to the room.</li><li>Estimated room budget: <strong>RM1,600 - RM2,400 / night</strong>.</li></ul>
+          <div class="hotel-links"><a href="https://www.shama.com/lakeview-asoke">Official site</a><a class="secondary" href="https://www.shama.com/lakeview-asoke/accommodation">Room list</a></div>
+        </article>
+        <article class="option">
+          <span class="badge" style="background: #7c3aed">Premium Family</span>
+          <h3>Marriott Executive Apartments Sukhumvit Park</h3>
+          <p><strong>Recommended room:</strong> Three Bedroom Apartment / Suite. Stronger brand trust and fuller facilities.</p>
+          <ul><li>Good for families, senior guests, or anyone who prefers hotel-style service.</li><li>Near Phrom Phong, EmQuartier, Emporium, and Benchasiri Park.</li><li>Estimated room budget: <strong>RM2,400 - RM3,600 / night</strong>.</li></ul>
+          <div class="hotel-links"><a href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/overview/">Official site</a><a class="secondary" href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/rooms/">Rooms</a></div>
+        </article>
+      </div>
+      <div class="hotel-gallery">
+        <article class="hotel-photos"><header><strong>Centre Point Hotel Sukhumvit 10</strong><span>Top pick: practical and spacious for 6 pax</span></header><div class="hotel-photo-grid"><figure class="hotel-photo"><img src="trip-report/centrepoint-lobby.jpg" alt="Centre Point lobby"><span>Lobby</span></figure><figure class="hotel-photo"><img src="trip-report/centrepoint-room.jpg" alt="Centre Point room"><span>Room</span></figure><figure class="hotel-photo"><img src="trip-report/centrepoint-pool.jpg" alt="Centre Point pool"><span>Pool</span></figure></div></article>
+        <article class="hotel-photos"><header><strong>Ascott Embassy Sathorn Bangkok</strong><span>Premium and quieter serviced apartment</span></header><div class="hotel-photo-grid"><figure class="hotel-photo"><img src="trip-report/ascott-lobby.jpg" alt="Ascott lobby"><span>Lobby</span></figure><figure class="hotel-photo"><img src="trip-report/ascott-room.jpg" alt="Ascott room"><span>Room</span></figure><figure class="hotel-photo"><img src="trip-report/ascott-pool.jpg" alt="Ascott pool"><span>Pool</span></figure></div></article>
+        <article class="hotel-photos"><header><strong>Shama Lakeview Asoke Bangkok</strong><span>Family-style apartment feel</span></header><div class="hotel-photo-grid"><figure class="hotel-photo"><img src="trip-report/shama-lobby.jpg" alt="Shama lobby"><span>Lobby</span></figure><figure class="hotel-photo"><img src="trip-report/shama-room.jpg" alt="Shama room"><span>Room</span></figure><figure class="hotel-photo"><img src="trip-report/shama-pool.jpg" alt="Shama pool"><span>Pool</span></figure></div></article>
+        <article class="hotel-photos"><header><strong>Marriott Executive Apartments</strong><span>Brand service with apartment space</span></header><div class="hotel-photo-grid"><figure class="hotel-photo"><img src="trip-report/marriott-lounge.jpg" alt="Marriott lounge"><span>Lounge</span></figure><figure class="hotel-photo"><img src="trip-report/marriott-room.jpg" alt="Marriott room"><span>Room</span></figure><figure class="hotel-photo"><img src="trip-report/marriott-pool.jpg" alt="Marriott pool"><span>Pool</span></figure></div></article>
+      </div>
+      <div class="hotel-spec">
+        <h4>Hotel Difference Summary</h4>
+        <table>
+          <thead><tr><th>Hotel</th><th>Best For</th><th>Strength</th><th>Check Before Booking</th></tr></thead>
+          <tbody>
+            <tr><td>Centre Point Sukhumvit 10</td><td>Convenience and value</td><td>Good location, practical room, suitable for 6 pax</td><td>Breakfast, bed setup, bathtub, washer, cancellation policy</td></tr>
+            <tr><td>Shama Lakeview Asoke</td><td>Family / friends who want space</td><td>Apartment feel, living room, kitchen</td><td>Exact occupancy, breakfast, washer, room layout</td></tr>
+            <tr><td>Marriott Executive Apartments</td><td>Brand comfort</td><td>Hotel service, facilities, family-friendly</td><td>3-bedroom availability and final price</td></tr>
+            <tr><td>Ascott Embassy Sathorn</td><td>Premium quiet stay</td><td>Higher-end environment, pool, gym, serviced apartment</td><td>Breakfast, washer, transport preference</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="en-transport">
+      <h2>Transport Standard</h2>
+      <div class="transport">Use <strong>GrabVan</strong> as the main transport. If a van is not available, split into <strong>2 GrabCars</strong>. Tuk tuk is not recommended as main transport for 6 pax because the group will split and pricing is less predictable.</div>
+      <table style="margin-top: 16px">
+        <thead><tr><th>Route</th><th>Recommendation</th><th>Budget Guide</th></tr></thead>
+        <tbody>
+          <tr><td>DMK ⇄ Hotel</td><td>GrabVan / 2 GrabCars. Leave luggage at hotel on arrival.</td><td>Approx. THB 700 - 1,200 per way</td></tr>
+          <tr><td>City transfers</td><td>Grab for short routes; BTS can be used around Siam / Asok / Silom if traffic is heavy.</td><td>Approx. THB 250 - 600 per ride</td></tr>
+          <tr><td>Ayutthaya day trip</td><td>Book a van / Grab Rent so the driver waits at each stop.</td><td>Approx. THB 4,500 - 6,500 per day</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="en-agenda">
+      <h2>4D3N Detailed Agenda</h2>
+      <p class="section-intro">The route is arranged for comfort: light arrival day, classic old city on Day 2, Ayutthaya on Day 3, and shopping with airport buffer on Day 4.</p>
+      <article class="day">
+        <div class="datebox"><strong>Day 1</strong><span>4 Jan｜Arrival + Siam + ICONSIAM</span></div>
+        <div>
+          <div class="route-title"><strong>Theme: Easy first day after landing</strong><span class="pill">Light route</span><span class="pill">Photo-friendly</span><span class="pill">Many dinner options</span></div>
+          <div class="timeline">
+            <div class="time">09:20</div><div class="desc"><strong>Arrive at DMK.</strong> Immigration, luggage, SIM/eSIM check. Allow 30-50 minutes.</div>
+            <div class="time">10:20</div><div class="desc"><strong>GrabVan to hotel.</strong> Travel time to Sukhumvit / Sathorn is usually 45-75 minutes. Leave luggage first.</div>
+            <div class="time">12:00</div><div class="desc"><strong>Lunch near hotel / Terminal 21.</strong> Choose an easy, air-conditioned lunch: Pier 21, Have a Zeed, or Kub Kao Kub Pla.</div>
+            <div class="time">13:30</div><div class="desc"><strong>Jim Thompson House or Siam malls.</strong> A cultural stop that is not too tiring. If the group is tired, switch to Siam Paragon / CentralWorld.</div>
+            <div class="time">15:30</div><div class="desc"><strong>Hotel check-in and rest.</strong> Keep 1.5 hours of rest before the evening.</div>
+            <div class="time">17:30</div><div class="desc"><strong>ICONSIAM.</strong> Riverside night view, SookSiam food area, shopping, and group photos.</div>
+            <div class="time">20:30</div><div class="desc"><strong>Return to hotel or short massage.</strong> Keep the first night easy.</div>
+          </div>
+          <div class="route-legs"><h4>Travel Time Guide</h4><div class="leg"><span>DMK → Hotel</span><span class="duration">45-75 min</span><span>Use GrabVan if luggage is heavy.</span></div><div class="leg"><span>Hotel → ICONSIAM</span><span class="duration">35-60 min</span><span>Evening traffic can be slow.</span></div><div class="leg"><span>ICONSIAM → Hotel</span><span class="duration">35-70 min</span><span>Allow waiting time at pickup point.</span></div></div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="datebox"><strong>Day 2</strong><span>5 Jan｜Grand Palace + Wat Pho + Wat Arun + Chinatown</span></div>
+        <div>
+          <div class="route-title"><strong>Theme: Bangkok classics without unnecessary detours</strong><span class="pill">Must-see</span><span class="pill">Temple outfit</span><span class="pill">Chinatown dinner</span></div>
+          <div class="timeline">
+            <div class="time">07:30</div><div class="desc"><strong>Breakfast and temple outfit check.</strong> Sleeved top and knee-covering pants/skirt recommended.</div>
+            <div class="time">08:15</div><div class="desc"><strong>GrabVan to Grand Palace.</strong> Leave early to avoid heat and crowds. Travel time 35-60 minutes.</div>
+            <div class="time">09:15</div><div class="desc"><strong>Grand Palace / Wat Phra Kaew.</strong> Stay 1.5-2 hours. Set a meeting point because the area is crowded.</div>
+            <div class="time">11:20</div><div class="desc"><strong>Wat Pho.</strong> Reclining Buddha and temple complex. Stay 45-70 minutes.</div>
+            <div class="time">12:45</div><div class="desc"><strong>Lunch around Tha Tien / Tha Maharaj.</strong> Options: Rongros, Supanniga, or Tha Maharaj.</div>
+            <div class="time">14:15</div><div class="desc"><strong>Ferry to Wat Arun.</strong> Short ferry ride; more efficient than driving around the bridge.</div>
+            <div class="time">16:00</div><div class="desc"><strong>Return to hotel for rest.</strong> This makes the Chinatown evening more comfortable.</div>
+            <div class="time">18:00</div><div class="desc"><strong>Yaowarat Chinatown.</strong> Street food, seafood, desserts, or seated dinner at T&K Seafood.</div>
+          </div>
+          <div class="route-legs"><h4>Travel Time Guide</h4><div class="leg"><span>Hotel → Grand Palace</span><span class="duration">35-60 min</span><span>Go earlier for smoother traffic.</span></div><div class="leg"><span>Wat Pho → Wat Arun</span><span class="duration">10-20 min</span><span>Includes walking, ticket, and ferry.</span></div><div class="leg"><span>Hotel → Yaowarat</span><span class="duration">25-50 min</span><span>Dinner traffic can be heavy.</span></div></div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="datebox"><strong>Day 3</strong><span>6 Jan｜Ayutthaya Day Trip + Night Option</span></div>
+        <div>
+          <div class="route-title"><strong>Theme: Historical day trip with good photo stops</strong><span class="pill">Private van</span><span class="pill">Heritage</span><span class="pill">Optional night view</span></div>
+          <div class="timeline">
+            <div class="time">07:30</div><div class="desc"><strong>Breakfast.</strong> Bring sunscreen, hat, water, and comfortable shoes.</div>
+            <div class="time">08:00</div><div class="desc"><strong>Depart by van / Grab Rent.</strong> Travel time 90-120 minutes.</div>
+            <div class="time">10:00</div><div class="desc"><strong>Wat Mahathat.</strong> Famous Buddha head in tree roots. Stay 45-60 minutes.</div>
+            <div class="time">11:15</div><div class="desc"><strong>Wat Phra Si Sanphet.</strong> Iconic ruins and wide photo angles.</div>
+            <div class="time">12:30</div><div class="desc"><strong>Lunch and air-conditioned rest.</strong> Options: Baan Mai Rim Nam, Sala Ayutthaya, or Busaba Cafe.</div>
+            <div class="time">14:15</div><div class="desc"><strong>Optional Bang Pa-In Palace or cafe break.</strong> Choose based on weather and group energy.</div>
+            <div class="time">15:45</div><div class="desc"><strong>Wat Chaiwatthanaram.</strong> Best placed near late afternoon for photos.</div>
+            <div class="time">17:15</div><div class="desc"><strong>Return to Bangkok.</strong> Night choice: Mahanakhon SkyWalk or Banthat Thong food street.</div>
+          </div>
+          <div class="route-legs"><h4>Travel Time Guide</h4><div class="leg"><span>Hotel → Ayutthaya</span><span class="duration">90-120 min</span><span>One waiting van is most practical.</span></div><div class="leg"><span>Ayutthaya → Bangkok</span><span class="duration">90-150 min</span><span>Evening traffic may extend the ride.</span></div><div class="leg"><span>Hotel → Mahanakhon / Banthat Thong</span><span class="duration">20-45 min</span><span>Choose only one evening activity.</span></div></div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="datebox"><strong>Day 4</strong><span>7 Jan｜Shopping + Souvenirs + Airport</span></div>
+        <div>
+          <div class="route-title"><strong>Theme: Keep airport buffer safe</strong><span class="pill">Shopping</span><span class="pill">Souvenirs</span><span class="pill">19:45 flight</span></div>
+          <div class="timeline">
+            <div class="time">09:00</div><div class="desc"><strong>Breakfast and packing.</strong> Keep passports, receipts, chargers, and tax refund documents together.</div>
+            <div class="time">09:45</div><div class="desc"><strong>Erawan Shrine.</strong> Short stop for photos and prayers.</div>
+            <div class="time">10:30</div><div class="desc"><strong>CentralWorld / Big C / Platinum.</strong> Best area for snacks, souvenirs, cosmetics, and clothes.</div>
+            <div class="time">12:30</div><div class="desc"><strong>Lunch around Pratunam / CentralWorld.</strong> Options: Go-Ang chicken rice, Kub Kao Kub Pla, or food hall.</div>
+            <div class="time">14:00</div><div class="desc"><strong>Short massage or cafe.</strong> Keep it to 60-90 minutes so airport timing stays safe.</div>
+            <div class="time">15:45</div><div class="desc"><strong>Return to hotel for luggage.</strong> Check traffic before leaving.</div>
+            <div class="time">16:30</div><div class="desc"><strong>GrabVan to DMK.</strong> Allow 60-100 minutes plus airport check-in buffer.</div>
+          </div>
+          <div class="note">Do not add far attractions on the last day. A 19:45 DMK flight needs a safe traffic buffer.</div>
+        </div>
+      </article>
+    </section>
+    <section id="en-food">
+      <h2>Restaurant / Food Options</h2>
+      <p class="section-intro">These cards are easy swaps depending on queue, weather, energy, and budget.</p>
+      <div class="local-grid">
+        <article class="local-card"><img src="trip-report/restaurant-rongros.jpg" alt="Rongros Bangkok"><div><h3>Rongros</h3><p>Best for Wat Arun river views. Good for Day 2 lunch if booked in advance.</p><p class="small"><strong>Next:</strong> Wat Arun in approx. 10-20 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-supanniga.jpg" alt="Supanniga Bangkok"><div><h3>Supanniga Eating Room</h3><p>Reliable Thai food for sharing. Less risky than a pure photo-spot restaurant.</p><p class="small"><strong>Next:</strong> Wat Arun in approx. 10-20 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-tha-maharaj.jpg" alt="Tha Maharaj Bangkok"><div><h3>Tha Maharaj</h3><p>Air-conditioned, easy to meet up, and useful when the group is tired or hot.</p><p class="small"><strong>Next:</strong> Wat Arun in approx. 15-25 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-yaowarat.jpg" alt="Yaowarat Bangkok"><div><h3>Yaowarat Chinatown</h3><p>Classic Bangkok street-food evening with seafood, noodles, desserts, and snacks.</p><p class="small"><strong>Next:</strong> Hotel in approx. 30-60 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Banthat Thong Bangkok"><div><h3>Banthat Thong Food Street</h3><p>Younger, lively, and flexible. Good after Ayutthaya if the group wants an easy food night.</p><p class="small"><strong>Next:</strong> Hotel in approx. 20-45 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-goang.jpg" alt="Go-Ang Pratunam"><div><h3>Go-Ang Pratunam Chicken Rice</h3><p>Famous, quick, and close to the shopping area. Practical for Day 4 lunch.</p><p class="small"><strong>Next:</strong> Massage / cafe in approx. 10-20 min.</p></div></article>
+      </div>
+    </section>
+    <section id="en-night">
+      <h2>Evening Entertainment Options</h2>
+      <p class="section-intro">Choose one main night activity for Day 2 or Day 3. Do not overload the nights after hot sightseeing days.</p>
+      <div class="local-grid">
+        <article class="local-card"><img src="trip-report/activity-muay-thai.jpg" alt="Bangkok Muay Thai"><div><h3>Rajadamnern Muay Thai <a class="inline-link" href="https://rajadamnern.com/" target="_blank" rel="noopener">官网</a></h3><p>One of the most local and memorable Bangkok night activities.</p><p class="small"><strong>Time:</strong> 2.5-3.5 hours｜<strong>Transfer:</strong> hotel approx. 25-55 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-dinner-cruise.jpg" alt="Chao Phraya Dinner Cruise"><div><h3>Chao Phraya Dinner Cruise <a class="inline-link" href="https://chaophrayaprincess.com/" target="_blank" rel="noopener">官网</a></h3><p>Relaxed river-night experience, good for families and first-time Bangkok visitors.</p><p class="small"><strong>Time:</strong> 2-2.5 hours｜Best after ICONSIAM / riverside route.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-calypso.jpg" alt="Calypso Cabaret"><div><h3>Calypso Cabaret <a class="inline-link" href="https://www.calypsocabaret.com/" target="_blank" rel="noopener">官网</a></h3><p>Tourist-friendly but famous; good for a lighter show night.</p><p class="small"><strong>Time:</strong> 2-3 hours｜From Yaowarat approx. 25-45 min.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-tichuca.jpg" alt="Bangkok rooftop bar"><div><h3>Rooftop Bar <a class="inline-link" href="https://www.tichuca.co/" target="_blank" rel="noopener">Tichuca</a><a class="inline-link alt" href="https://www.marriott.com/en-us/hotels/bkkms-bangkok-marriott-hotel-sukhumvit/dining/" target="_blank" rel="noopener">Octave</a></h3><p>Tichuca, Octave, and Lebua are popular Bangkok skyline options.</p><p class="small"><strong>Note:</strong> Dress code may apply. Avoid slippers and overly casual wear.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk"><div><h3>Mahanakhon SkyWalk <a class="inline-link" href="https://kingpowermahanakhon.co.th/" target="_blank" rel="noopener">官网</a></h3><p>High-impact city-view experience for first-time visitors.</p><p class="small"><strong>Time:</strong> 1.5-2 hours｜Best from Sathorn / Silom.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Bangkok food street"><div><h3>Night Market / Food Street</h3><p>Jodd Fairs or Banthat Thong are flexible, casual, and easier on the budget.</p><p class="small"><strong>Time:</strong> 1.5-3 hours｜Good for free-and-easy food.</p></div></article>
+      </div>
+    </section>
+    <section id="en-local">
+      <h2>Local Experiences, Snacks, Souvenirs</h2>
+      <p class="section-intro">More local-style options we can swap in depending on energy, weather, and interest. Some are better for this weekday trip; weekend-only markets are marked clearly.</p>
+      <div class="local-grid">
+        <article class="local-card"><img src="trip-report/grand-palace.jpg" alt="Thai costume photoshoot Bangkok"><div><h3>Thai Costume Photo Session <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Thai+costume+rental" target="_blank" rel="noopener">Map</a></h3><p>Rent Thai outfits around Wat Arun for a more memorable group photo session.</p><p class="small"><strong>Time:</strong> 2-3 hours｜<strong>Best:</strong> Day 2 around Wat Arun.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-calypso.jpg" alt="Thai Khon performance"><div><h3>Khon Traditional Performance <a class="inline-link" href="https://salachalermkrung.com/?c=news&cid=90&m=detail" target="_blank" rel="noopener">Official</a></h3><p>A more traditional Thai stage experience with costumes, music, and classical storytelling.</p><p class="small"><strong>Time:</strong> 1-2 hours｜<strong>Best:</strong> Day 2 old-city evening, subject to show schedule.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-yaowarat.jpg" alt="Talat Noi Song Wat walk"><div><h3>Talat Noi / Song Wat Walk <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Talat+Noi+Song+Wat+Bangkok" target="_blank" rel="noopener">Map</a></h3><p>Old Bangkok streets, murals, warehouses, cafes, and Thai-Chinese community atmosphere.</p><p class="small"><strong>Time:</strong> 1.5-2.5 hours｜<strong>Best:</strong> Before Chinatown dinner.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-muay-thai.jpg" alt="Bangkok Muay Thai class"><div><h3>Muay Thai Trial Class <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Muay+Thai+beginner+class+Bangkok" target="_blank" rel="noopener">Map</a></h3><p>Try basic punches and kicks instead of only watching a match. Choose an easy beginner-friendly class.</p><p class="small"><strong>Time:</strong> 1.5-2.5 hours｜<strong>Best:</strong> Day 1 afternoon or Day 4 morning.</p></div></article>
+        <article class="local-card"><img src="trip-report/centrepoint-room.jpg" alt="Thai herbal compress workshop"><div><h3>Thai Herbal / Aroma Workshop <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+herbal+compress+workshop+Bangkok" target="_blank" rel="noopener">Map</a></h3><p>Make herbal compress balls, aroma sachets, or small gifts. Good indoor backup if it rains.</p><p class="small"><strong>Time:</strong> 1.5-3 hours｜<strong>Best:</strong> Day 1 afternoon or Day 4.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-tha-maharaj.jpg" alt="Bangkok fruit market"><div><h3>Or Tor Kor / Fruit Market <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Or+Tor+Kor+Market+Bangkok" target="_blank" rel="noopener">Map</a></h3><p>Local market stop for Thai fruits, coconut desserts, snacks, and casual food tasting.</p><p class="small"><strong>Time:</strong> 1-2 hours｜<strong>Best:</strong> Day 4 morning or as a Siam replacement.</p></div></article>
+        <article class="local-card"><img src="trip-report/activity-dinner-cruise.jpg" alt="Khlong Lat Mayom floating market"><div><h3>Khlong Lat Mayom Floating Market <a class="inline-link" href="https://www.tourismthailand.org/Attraction/khlong-lat-mayom-floating-market" target="_blank" rel="noopener">Info</a></h3><p>More local than the tourist-heavy floating markets, but it works best on weekends.</p><p class="small"><strong>Time:</strong> Half day｜<strong>Note:</strong> Not ideal for this Mon-Thu trip unless dates change.</p></div></article>
+        <article class="local-card"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Bangkok Thai dessert route"><div><h3>Thai Dessert / Cafe Route <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+dessert+cafe+Bangkok" target="_blank" rel="noopener">Map</a></h3><p>Mango sticky rice, coconut desserts, Thai tea, toast, and old-town cafes for an easy evening.</p><p class="small"><strong>Time:</strong> 1.5-2.5 hours｜<strong>Best:</strong> Day 2 afternoon or Day 3 evening.</p></div></article>
+      </div>
+      <div class="choice-table">
+        <h4>More Local Activity Options</h4>
+        <table>
+          <thead><tr><th>Type</th><th>Activity</th><th>Best Day</th><th>Time / Transfer</th><th>Best For</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>Photo</td><td>Wat Arun Thai costume shoot</td><td>Day 2 afternoon</td><td>2-3 hours</td><td>Group photos</td><td>Book costume / makeup in advance.</td></tr>
+            <tr><td>Culture</td><td><div class="activity-mini"><img src="trip-report/activity-calypso.jpg" alt="Khon performance"><div><strong>Khon performance</strong><div class="links"><a class="inline-link" href="https://salachalermkrung.com/?c=news&cid=90&m=detail" target="_blank" rel="noopener">Official</a></div></div></div></td><td>Day 2 evening</td><td>1-2 hours</td><td>Traditional show</td><td>Check exact show date and ticket price.</td></tr>
+            <tr><td>Old town</td><td><div class="activity-mini"><img src="trip-report/restaurant-yaowarat.jpg" alt="Talat Noi / Song Wat walk"><div><strong>Talat Noi / Song Wat walk</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Talat+Noi+Song+Wat+Bangkok" target="_blank" rel="noopener">Map</a></div></div></div></td><td>Day 1 or Day 2</td><td>1.5-2.5 hours</td><td>Street photos, cafes</td><td>Better in cooler hours.</td></tr>
+            <tr><td>Sport</td><td><div class="activity-mini"><img src="trip-report/activity-muay-thai.jpg" alt="Muay Thai trial class"><div><strong>Muay Thai trial class</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Muay+Thai+beginner+class+Bangkok" target="_blank" rel="noopener">Map</a></div></div></div></td><td>Day 1 / Day 4</td><td>1.5-2.5 hours</td><td>Active group</td><td>Do not place after Ayutthaya.</td></tr>
+            <tr><td>Workshop</td><td><div class="activity-mini"><img src="trip-report/centrepoint-room.jpg" alt="Thai herbal / aroma craft"><div><strong>Thai herbal / aroma craft</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+herbal+compress+workshop+Bangkok" target="_blank" rel="noopener">Map</a></div></div></div></td><td>Day 1 / Day 4</td><td>1.5-3 hours</td><td>Indoor, relaxed activity</td><td>Good rainy-day backup.</td></tr>
+            <tr><td>Market</td><td><div class="activity-mini"><img src="trip-report/restaurant-tha-maharaj.jpg" alt="Or Tor Kor / fruit market"><div><strong>Or Tor Kor / fruit market</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Or+Tor+Kor+Market+Bangkok" target="_blank" rel="noopener">Map</a></div></div></div></td><td>Day 4 morning</td><td>1-2 hours</td><td>Fruits, snacks, local market</td><td>More local than a mall food court.</td></tr>
+            <tr><td>Weekend</td><td><div class="activity-mini"><img src="trip-report/activity-dinner-cruise.jpg" alt="Khlong Lat Mayom floating market"><div><strong>Khlong Lat Mayom floating market</strong><div class="links"><a class="inline-link" href="https://www.tourismthailand.org/Attraction/khlong-lat-mayom-floating-market" target="_blank" rel="noopener">Info</a></div></div></div></td><td>Weekend only</td><td>Half day</td><td>Local weekend food market</td><td>Not suitable for the current weekday dates.</td></tr>
+            <tr><td>Dessert</td><td><div class="activity-mini"><img src="trip-report/restaurant-banthat-thong.jpg" alt="Thai dessert / cafe route"><div><strong>Thai dessert / cafe route</strong><div class="links"><a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=Thai+dessert+cafe+Bangkok" target="_blank" rel="noopener">Map</a></div></div></div></td><td>Day 2 / Day 3</td><td>1.5-2.5 hours</td><td>Easy evening</td><td>Good alternative to alcohol or massage.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="category-grid">
+        <article class="category-card"><h3>Local Activities</h3><p>Muay Thai, Thonburi canal boat, Thai cooking class, flower market, amulet market, night market, rooftop bar, dinner cruise.</p><span class="tag">Muay Thai</span><span class="tag">Canal tour</span><span class="tag">Night market</span></article>
+        <article class="category-card"><h3>Must-Try Food</h3><p>Pad Thai, boat noodles, tom yum, green curry, mango sticky rice, chicken rice, grilled pork neck, som tam.</p><span class="tag">Pad Thai</span><span class="tag">Boat noodles</span><span class="tag">Som Tam</span></article>
+        <article class="category-card"><h3>Street Snacks</h3><p>Coconut ice cream, banana roti, moo ping, Thai fried chicken, fried banana, Thai milk tea stalls, fresh coconut.</p><span class="tag">Coconut</span><span class="tag">Roti</span><span class="tag">Moo Ping</span></article>
+        <article class="category-card"><h3>Drinks</h3><p>Thai milk tea, cha manao, fresh coconut, herbal drinks, Chang / Singha beer, rooftop cocktails.</p><span class="tag">Thai tea</span><span class="tag">Coconut</span><span class="tag">Cocktail</span></article>
+        <article class="category-card"><h3>Snacks / Souvenirs</h3><p>Tao Kae Noi seaweed, Bento squid, Mama noodles, Thai Pocky, dried mango, dried durian, Big C snack packs.</p><span class="tag">Big C</span><span class="tag">Dried mango</span><span class="tag">Mama noodles</span></article>
+        <article class="category-card"><h3>Pharmacy / Practical Gifts</h3><p>Thai inhaler, herbal balm, Tiger Balm, Counterpain, face masks, mosquito repellent, Boots pharmacy items.</p><span class="tag">Inhaler</span><span class="tag">Tiger Balm</span><span class="tag">Boots</span></article>
+      </div>
+    </section>
+    <section id="en-prep">
+      <h2>Pre-Departure Checklist</h2>
+      <div class="checklist-grid">
+        <article class="check-card"><h3>Hotel / Flights</h3><ul><li>Confirm all passport names.</li><li>Check whether checked baggage is needed.</li><li>Confirm breakfast, bed setup, occupancy, and cancellation policy.</li></ul></article>
+        <article class="check-card"><h3>Transport / Apps</h3><ul><li>Install Grab on all phones.</li><li>Use GrabVan / private van for airport and Ayutthaya.</li><li>Set meeting points at malls and night markets.</li></ul></article>
+        <article class="check-card"><h3>Cash / Payment</h3><ul><li>Prepare small THB notes for street food and markets.</li><li>Cards work in malls and hotels, but not all stalls.</li><li>Keep tax refund receipts on Day 4.</li></ul></article>
+        <article class="check-card"><h3>Dress / Weather</h3><ul><li>Temple day: sleeved top and knee-covering outfit.</li><li>Ayutthaya: sunscreen, hat, water.</li><li>Rooftop bars may reject slippers or very casual wear.</li></ul></article>
+      </div>
+    </section>
+    <section id="en-budget">
+      <h2>Budget Estimate</h2>
+      <p class="section-intro">Estimated for 6 pax. Final cost depends on hotel availability, tickets, Grab pricing, meals, and exchange rate. Personal shopping and checked baggage add-ons are not included.</p>
+      <div class="budget">
+        <div>
+          <table>
+            <thead><tr><th>Item</th><th>6-Pax Estimate</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>Flights</td><td>RM 4,268.34</td><td>Based on screenshot</td></tr>
+              <tr><td>Hotel</td><td>RM 4,200 - 6,000</td><td>Centre Point 3-bedroom, 3 nights estimate</td></tr>
+              <tr><td>Airport transfers</td><td>RM 170 - 300</td><td>DMK ⇄ hotel by GrabVan / 2 GrabCars</td></tr>
+              <tr><td>City Grab</td><td>RM 500 - 900</td><td>Day 1, Day 2, Day 4 city transfers</td></tr>
+              <tr><td>Ayutthaya van</td><td>RM 550 - 800</td><td>Full-day van / Grab Rent</td></tr>
+              <tr><td>Basic tickets</td><td>RM 1,000 - 1,450</td><td>Grand Palace, Wat Pho, Wat Arun, Jim Thompson, Ayutthaya sites</td></tr>
+              <tr><td>Optional tickets</td><td>RM 750 - 950</td><td>Mahanakhon SkyWalk, can be removed if needed</td></tr>
+              <tr><td>Food & drinks</td><td>RM 3,000 - 4,500</td><td>Main meals, snacks, drinks; premium alcohol not included</td></tr>
+              <tr><td>Massage / SIM / misc.</td><td>RM 600 - 1,200</td><td>One massage, SIM/eSIM, tips, small items</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="total">
+          <span>Estimated Total</span>
+          <span class="big">RM 14,800 - 20,400</span>
+          <p>Average per person: <strong>RM 2,470 - 3,400</strong>. This includes comfortable transport, Ayutthaya van, selected meals, and optional Mahanakhon.</p>
+          <p><strong>Suggested budget approach:</strong> Use Centre Point as the base plan and keep Mahanakhon as optional. If we want a lower budget, remove high-ticket activities first.</p>
+        </div>
+      </div>
     </section>
   </main>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('[data-lang]');
+      function setLang(lang) {
+        var isEn = lang === 'en';
+        document.body.classList.toggle('lang-en', isEn);
+        document.body.classList.toggle('lang-zh', !isEn);
+        document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+        buttons.forEach(function (button) {
+          var active = button.getAttribute('data-lang') === lang;
+          button.classList.toggle('active', active);
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        try { localStorage.setItem('bangkokReportLang', lang); } catch (error) {}
+      }
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          setLang(button.getAttribute('data-lang'));
+        });
+      });
+      var saved = 'zh';
+      try { saved = localStorage.getItem('bangkokReportLang') || 'zh'; } catch (error) {}
+      setLang(saved === 'en' ? 'en' : 'zh');
+    })();
+  </script>
 </body>
 </html>
-
