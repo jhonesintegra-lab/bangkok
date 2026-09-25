@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>曼谷 4天3夜行程 Report｜6人行</title>
+  <title>曼谷 4天3夜精美行程报告｜6人行</title>
   <style>
     :root {
       --ink: #172033;
@@ -709,6 +709,376 @@
       .datebox { min-height: auto; }
     }
 
+
+
+    /* Better report design upgrade */
+    html { scroll-behavior: smooth; }
+    body { background: #dfe6ee; }
+
+    .page {
+      width: min(1220px, calc(100% - 28px));
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 28px 80px rgba(19, 31, 52, .18);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      min-height: 470px;
+      padding: 0;
+      isolation: isolate;
+      background: #142033;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(17, 31, 54, .93) 0%, rgba(17, 31, 54, .82) 42%, rgba(17, 31, 54, .45) 100%),
+        url("trip-report/grand-palace.jpg") center / cover no-repeat;
+    }
+
+    .hero::after { display: none; }
+
+    .hero-copy {
+      align-self: end;
+      padding: 56px 54px 52px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-copy h1 {
+      max-width: 680px;
+      font-size: clamp(38px, 5vw, 66px);
+      text-shadow: 0 3px 22px rgba(0,0,0,.26);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .hero-stats span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.28);
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 12px;
+      padding: 34px;
+      min-height: 470px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-media figure {
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.32);
+      box-shadow: 0 18px 42px rgba(0,0,0,.24);
+      background: rgba(255,255,255,.12);
+    }
+
+    .hero-media figure:first-child { grid-row: span 2; }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 190px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero-media figcaption {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      background: rgba(10, 18, 30, .64);
+      backdrop-filter: blur(8px);
+    }
+
+    .summary {
+      grid-template-columns: repeat(5, 1fr);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #ffffff;
+    }
+
+    .summary div {
+      min-height: 96px;
+      border-left: 0;
+      border-top: 5px solid var(--teal);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(23,32,51,.05);
+    }
+
+    .summary div:nth-child(2) { border-top-color: var(--gold); }
+    .summary div:nth-child(3) { border-top-color: var(--navy); }
+    .summary div:nth-child(4) { border-top-color: var(--coral); }
+    .summary div:nth-child(5) { border-top-color: #6d5bd0; }
+
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 16px 48px;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+    }
+
+    .toc a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--navy);
+      background: var(--soft);
+      border: 1px solid #dbe6f6;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .toc a:hover { background: var(--mint); }
+
+    section {
+      counter-increment: report-section;
+      padding-top: 42px;
+      padding-bottom: 42px;
+    }
+
+    .page { counter-reset: report-section; }
+    section.sources { counter-increment: none; }
+
+    section > h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    section > h2::before {
+      content: counter(report-section, decimal-leading-zero);
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--navy);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .sources > h2::before { content: "REF"; }
+
+    .executive {
+      background:
+        linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .decision-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 12px 26px rgba(23,32,51,.06);
+    }
+
+    .decision-card.featured {
+      border-color: rgba(15,118,110,.28);
+      background: linear-gradient(180deg, #fff, #edf9f6);
+    }
+
+    .decision-card .mini-label {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .decision-card.featured .mini-label { background: var(--teal); }
+
+    .decision-card p { margin: 8px 0 0; }
+
+    .overview-board {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .overview-panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .overview-panel h3 { color: var(--navy); }
+
+    .quick-route {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .quick-route div {
+      display: grid;
+      grid-template-columns: 72px 1fr 118px;
+      gap: 12px;
+      align-items: start;
+      padding: 10px 12px;
+      border: 1px solid #e8eef6;
+      border-radius: 14px;
+      background: #f9fbfe;
+      font-size: 14px;
+    }
+
+    .quick-route strong { color: var(--navy); }
+    .quick-route span:last-child { color: var(--teal); font-weight: 900; }
+
+    .visual-strip {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .photo-card {
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(23,32,51,.06);
+    }
+
+    .photo-card img { height: 140px; }
+
+    .option, .flight-card, .detail-card, .local-card, .category-card, .rule-card, .hotel-photos {
+      box-shadow: 0 10px 24px rgba(23,32,51,.05);
+    }
+
+    .choice-table, .budget > div:first-child {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .choice-table table { min-width: 820px; }
+    .budget table { min-width: 700px; }
+
+    .hotel-spec {
+      margin: 18px 0 4px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(23,32,51,.05);
+    }
+
+    .hotel-spec table { margin-top: 10px; }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .check-card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(23,32,51,.05);
+    }
+
+    .check-card h3 {
+      color: var(--navy);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .check-card h3::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex: 0 0 auto;
+    }
+
+    .report-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: #10233f;
+      color: #fff;
+    }
+
+    .report-note strong { color: #fff; }
+
+    @media (max-width: 980px) {
+      .hero, .summary, .decision-grid, .overview-board, .checklist-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-media {
+        min-height: auto;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 22px 28px;
+      }
+      .hero-media figure:first-child { grid-row: auto; }
+      .hero-copy { padding: 40px 26px 26px; }
+      .summary, .toc { padding-left: 22px; padding-right: 22px; }
+      .toc { position: static; }
+      .quick-route div { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      .toc { position: static; }
+      .hero-media figcaption { background: rgba(0,0,0,.72); }
+    }
+
     @media print {
       body { background: #fff; }
       .page {
@@ -725,17 +1095,44 @@
 <body>
   <main class="page">
     <header class="hero">
-      <div class="eyebrow">Bangkok 4D3N Travel Report</div>
-      <h1>泰国曼谷 4天3夜<br>6人行程提案</h1>
-      <p class="subtitle">2027年1月4日 - 1月7日｜KUL ⇄ DMK｜路线以出名但不雷、交通现实、6人同行舒服为标准。</p>
+      <div class="hero-copy">
+        <div class="eyebrow">Bangkok 4D3N Travel Proposal</div>
+        <h1>泰国曼谷 4天3夜<br>6人行程提案</h1>
+        <p class="subtitle">2027年1月4日 - 1月7日｜6人同行｜KUL ⇄ DMK｜以出名但不雷、交通现实、拍照好看、预算清楚为标准。</p>
+        <div class="hero-stats">
+          <span>6 pax</span>
+          <span>4 Jan - 7 Jan 2027</span>
+          <span>GrabVan / GrabCar x 2</span>
+          <span>住宿首推 Centre Point</span>
+        </div>
+      </div>
+      <div class="hero-media" aria-label="曼谷行程视觉重点">
+        <figure><img src="trip-report/grand-palace.jpg" alt="Bangkok Grand Palace"><figcaption>Grand Palace / Wat Phra Kaew</figcaption></figure>
+        <figure><img src="trip-report/restaurant-rongros.jpg" alt="Wat Arun river view"><figcaption>Wat Arun 河景午餐</figcaption></figure>
+        <figure><img src="trip-report/activity-mahanakhon.jpg" alt="Mahanakhon SkyWalk"><figcaption>Mahanakhon 夜景活动</figcaption></figure>
+      </div>
     </header>
 
     <div class="summary">
-      <div><span class="label">人数</span><span class="value">6 pax</span></div>
+      <div><span class="label">人数</span><span class="value">6 pax｜朋友/家庭团</span></div>
       <div><span class="label">航班</span><span class="value">DMK 09:20 抵达 / 19:45 回程</span></div>
-      <div><span class="label">交通标准</span><span class="value">GrabVan 或 GrabCar x 2</span></div>
+      <div><span class="label">交通标准</span><span class="value">GrabVan 优先，备用 GrabCar x 2</span></div>
+      <div><span class="label">住宿方向</span><span class="value">3房公寓式酒店，首推 Sukhumvit</span></div>
       <div><span class="label">预算风格</span><span class="value">中高性价比，不踩雷</span></div>
     </div>
+
+    <nav class="toc" aria-label="报告目录">
+      <a href="#recommendation">推荐结论</a>
+      <a href="#flight">航班</a>
+      <a href="#hotels">住宿</a>
+      <a href="#transport">交通</a>
+      <a href="#agenda">行程</a>
+      <a href="#food">餐厅</a>
+      <a href="#night">夜间娱乐</a>
+      <a href="#local">当地特色</a>
+      <a href="#prep">行前确认</a>
+      <a href="#budget">预算</a>
+    </nav>
 
     <div class="visual-strip">
       <figure class="photo-card"><img src="trip-report/grand-palace.jpg" alt="Bangkok Grand Palace"><span>大皇宫 / 玉佛寺</span></figure>
@@ -746,7 +1143,53 @@
       <figure class="photo-card"><img src="trip-report/activity-mahanakhon.jpg" alt="King Power Mahanakhon SkyWalk"><span>Mahanakhon 夜景</span></figure>
     </div>
 
-    <section>
+    <section id="recommendation" class="executive">
+      <h2>先给客人的推荐结论</h2>
+      <p class="section-intro">这页可以放在最前面给客人快速看懂：为什么这样排、住哪里最好、预算大概多少、晚上有什么活动可以选。详细行程和替换选择放在后面，方便讨论时逐项调整。</p>
+
+      <div class="decision-grid">
+        <article class="decision-card featured">
+          <span class="mini-label">最推荐方案</span>
+          <h3>Centre Point Sukhumvit 10 + 大皇宫经典线 + Ayutthaya</h3>
+          <p>适合第一次来曼谷的 6 人团：住宿性价比好，Day 2 跑最经典的老城区，Day 3 去大城府，Day 4 留购物和机场缓冲。</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">升级方案</span>
+          <h3>Ascott / Marriott + Mahanakhon / Dinner Cruise</h3>
+          <p>适合预算较高、想要报告看起来更高级的客人。住宿和夜间活动更体面，但总预算会明显上升。</p>
+        </article>
+        <article class="decision-card">
+          <span class="mini-label">预算控制</span>
+          <h3>保留 Centre Point，减少高票价活动</h3>
+          <p>如果客人觉得预算高，优先删 Mahanakhon 或把部分正餐换成商场餐厅 / food court，不建议删交通缓冲。</p>
+        </article>
+      </div>
+
+      <div class="overview-board">
+        <article class="overview-panel">
+          <h3>一页路线总览</h3>
+          <div class="quick-route">
+            <div><strong>Day 1</strong><span>抵达 DMK、酒店寄行李、Siam / Jim Thompson、ICONSIAM 河边夜景</span><span>轻松落地</span></div>
+            <div><strong>Day 2</strong><span>Grand Palace、Wat Pho、Wat Arun、Yaowarat 唐人街，可加泰拳 / cruise</span><span>经典必去</span></div>
+            <div><strong>Day 3</strong><span>Ayutthaya 大城府一日游，晚上 Mahanakhon / 美食街二选一</span><span>历史拍照</span></div>
+            <div><strong>Day 4</strong><span>Erawan Shrine、CentralWorld / Big C / Platinum、按摩或咖啡、16:30 去 DMK</span><span>购物回程</span></div>
+          </div>
+        </article>
+        <article class="overview-panel">
+          <h3>销售说明重点</h3>
+          <ul>
+            <li><strong>为什么不放 Tuk tuk：</strong>6人坐不了，容易分车，价格也不稳定；只适合短程体验。</li>
+            <li><strong>为什么住宿首推 Sukhumvit：</strong>吃喝、按摩、商场、叫 Grab 都方便，第一次来曼谷比较稳。</li>
+            <li><strong>为什么 Day 3 才去大城府：</strong>第一天刚下飞机不长途，行程体感更舒服。</li>
+            <li><strong>预算口径：</strong>机票按截图，酒店和活动用区间估算，最终以订房/订票页面为准。</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="report-note"><strong>建议对客人说：</strong>“这版先以舒服、不踩雷和交通现实为主。酒店给 4 个选择，行程每一天都有替代餐厅和活动，如果预算或体力需要调整，可以直接从选择表里面换。”</div>
+    </section>
+
+    <section id="flight">
       <h2>航班资料｜按截图价格</h2>
       <p class="section-intro">以下根据机票截图整理，方便客人一眼看到航班时间、机场、总价和注意事项。价格以截图为准，正式预订前需再次确认余位与票价。</p>
       <div class="flight-layout">
@@ -792,7 +1235,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="hotels">
       <h2>先推荐什么住宿</h2>
       <div class="grid-2">
         <article class="option recommended">
@@ -850,8 +1293,8 @@
             <li>预算抓：约 <strong>RM2,400 - RM3,600 / 晚</strong>；3晚约 <strong>RM7,200 - RM10,800</strong>。</li>
           </ul>
           <div class="hotel-links">
-            <a href="https://www.marriott.com/en-us/hotels/bkksp-sukhumvit-park-bangkok-marriott-executive-apartments/overview/">酒店官网</a>
-            <a class="secondary" href="https://www.marriott.com/en-us/hotels/bkksp-sukhumvit-park-bangkok-marriott-executive-apartments/rooms/">房型列表</a>
+            <a href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/overview/">酒店官网</a>
+            <a class="secondary" href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/rooms/">房型列表</a>
           </div>
         </article>
       </div>
@@ -900,7 +1343,7 @@
           <header>
             <strong>Marriott Executive Apartments Sukhumvit Park</strong>
             <span>高级家庭型：品牌服务 + 公寓式空间</span>
-            <div class="hotel-links"><a href="https://www.marriott.com/en-us/hotels/bkksp-sukhumvit-park-bangkok-marriott-executive-apartments/overview/">官网</a><a class="secondary" href="https://www.marriott.com/en-us/hotels/bkksp-sukhumvit-park-bangkok-marriott-executive-apartments/rooms/">房型</a></div>
+            <div class="hotel-links"><a href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/overview/">官网</a><a class="secondary" href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/rooms/">房型</a></div>
           </header>
           <div class="hotel-photo-grid">
             <figure class="hotel-photo"><img src="trip-report/marriott-lounge.jpg" alt="Marriott Executive Apartments Sukhumvit Park lounge"><span>Lobby / Lounge</span></figure>
@@ -921,6 +1364,19 @@
             <tr><td>Shama Lakeview Asoke</td><td>Sukhumvit 16 / Asoke</td><td>家庭团、朋友团想要公寓感</td><td>空间大、客厅厨房舒服、适合晚上买宵夜回房间聊天</td><td>位置比 Centre Point 稍微里面一点，叫 Grab 更方便</td><td>中高，家庭感强</td></tr>
             <tr><td>Marriott Executive Apartments Sukhumvit Park</td><td>Sukhumvit 24 / Phrom Phong</td><td>重视品牌、设施、服务的客人</td><td>品牌信任度高、设施完整、适合长辈/小孩、整体更体面</td><td>预算明显更高，离 Asok 核心稍远</td><td>高，舒适型</td></tr>
             <tr><td>Ascott Embassy Sathorn</td><td>Sathorn / Silom</td><td>想要高级安静、去 Mahanakhon/Chinatown 顺</td><td>质感高级、空间大、商务公寓感强，适合预算较高团</td><td>离 Sukhumvit 夜生活/Terminal 21 较远</td><td>高，升级型</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="hotel-spec">
+        <h4>酒店规格速看｜更方便和客人解释差异</h4>
+        <table>
+          <thead><tr><th>酒店</th><th>建议房型 / 面积</th><th>6人适合度</th><th>最明显卖点</th><th>订房前确认</th></tr></thead>
+          <tbody>
+            <tr><td>Centre Point Sukhumvit 10</td><td>Three Bedrooms Grand Suite，约 121 sqm</td><td>最适合 6 人同住</td><td>客厅、厨房、阳台、浴缸/淋浴配置，位置方便</td><td>早餐是否包含、床型、洗衣机、额外床安排</td></tr>
+            <tr><td>Shama Lakeview Asoke</td><td>Three Bedroom 约 120 sqm；Panoramic 约 186 sqm</td><td>空间感很好</td><td>serviced apartment，家庭感强，适合买宵夜回房</td><td>实际可住人数、是否连接房、早餐、洗衣设施</td></tr>
+            <tr><td>Marriott Executive Apartments</td><td>3-Bedroom Apartment，约 180 sqm</td><td>高级舒适型</td><td>品牌服务、全厨房、in-unit laundry、fitness / pool 设施完整</td><td>3房库存少，需尽早确认价格和取消条款</td></tr>
+            <tr><td>Ascott Embassy Sathorn</td><td>Three-Bedroom Premier 150 sqm / Executive 165 sqm</td><td>升级质感最好</td><td>infinity pool、gym、bathtub、厨房，部分房型有 washer/dryer</td><td>早餐是否含、房型是否有洗衣机、交通是否偏商务区</td></tr>
           </tbody>
         </table>
       </div>
@@ -949,7 +1405,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="transport">
       <h2>交通标准</h2>
       <div class="transport">
         全程以 <strong>GrabVan</strong> 为主；如果没有 Van，就用 <strong>GrabCar x 2</strong>。Tuk tuk 对 6 人不现实，通常要拆 2-3 辆，价格要谈、会塞车、也不适合带行李或赶机场。最多只当短程体验，不作为正式交通。
@@ -966,7 +1422,7 @@
       </table>
     </section>
 
-    <section>
+    <section id="agenda">
       <h2>4天3夜 Detailed Agenda</h2>
       <p class="section-intro">这版按 6 人同行来排：早上尽量避开人潮和塞车，午餐给 2-3 个可替换选择，晚上安排比较有气氛但不太折腾的地点。所有市区移动默认用 GrabVan；如果叫不到 Van，就拆 GrabCar x 2。</p>
 
@@ -1284,7 +1740,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="food">
       <h2>餐厅 / 美食照片选择卡</h2>
       <p class="section-intro">这些是行程里常被拿来替换的餐厅和美食点。实际当天可按排队、天气、体力和预算来换。</p>
       <div class="local-grid">
@@ -1344,7 +1800,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="night">
       <h2>夜间娱乐照片选择卡</h2>
       <p class="section-intro">Day 2 或 Day 3 晚上建议只选一个主活动。若白天走很多，选美食街或 cruise；若想体验曼谷娱乐，选泰拳、cabaret 或 rooftop。</p>
       <div class="local-grid">
@@ -1404,7 +1860,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="local">
       <h2>当地特色活动｜可替换加插</h2>
       <p class="section-intro">这些不是普通购物点，比较有曼谷当地感。建议不要全部塞进 4天3夜，而是按客人兴趣替换：想文化就选料理课/花市，想刺激就选 Muay Thai，想拍生活感就选水上社区或长尾船。</p>
       <div class="local-grid">
@@ -1477,7 +1933,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="activity-options">
       <h2>不去按摩的话｜活动替代建议</h2>
       <p class="section-intro">如果客人不想按摩，可以用这些活动替代。建议不要每天晚上都排重活动，Day 2 或 Day 3 选其中一个就好。</p>
       <div class="choice-table">
@@ -1498,7 +1954,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="local-list">
       <h2>当地特色清单｜吃喝买玩</h2>
       <p class="section-intro">这部分可以当作客人的 free & easy 参考，也可以让他们提前知道曼谷有什么值得试。不是全部都要塞进行程，按兴趣挑即可。</p>
       <div class="category-grid">
@@ -1535,7 +1991,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="rules">
       <h2>必做事项 / 不可以做 / 注意事项</h2>
       <div class="rules-grid">
         <article class="rule-card good">
@@ -1571,7 +2027,46 @@
       </div>
     </section>
 
-    <section>
+    <section id="prep">
+      <h2>出发前确认 Checklist</h2>
+      <p class="section-intro">这部分让报告更像正式出团资料：不只是行程，也把客人出发前最容易漏掉的东西列清楚。</p>
+      <div class="checklist-grid">
+        <article class="check-card">
+          <h3>订房 / 机票</h3>
+          <ul>
+            <li>确认 6 人姓名与护照拼音。</li>
+            <li>确认行李：目前截图只看到 cabin baggage 7kg。</li>
+            <li>订房优先选可取消，确认早餐、床型和可住人数。</li>
+          </ul>
+        </article>
+        <article class="check-card">
+          <h3>交通 / App</h3>
+          <ul>
+            <li>全部手机预装 Grab。</li>
+            <li>机场与大城府优先 GrabVan / 包车。</li>
+            <li>每天先定集合点，尤其是夜市和商场。</li>
+          </ul>
+        </article>
+        <article class="check-card">
+          <h3>现金 / 付款</h3>
+          <ul>
+            <li>准备 THB 小钞，夜市和街边小吃比较方便。</li>
+            <li>商场和酒店可刷卡，街边摊不一定收卡。</li>
+            <li>Day 4 购物保留退税单和护照资料。</li>
+          </ul>
+        </article>
+        <article class="check-card">
+          <h3>穿着 / 天气</h3>
+          <ul>
+            <li>寺庙日穿有袖、过膝裤裙。</li>
+            <li>大城府准备帽子、防晒、水。</li>
+            <li>Rooftop bar 避免拖鞋、背心、过短裤。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="budget">
       <h2>预算概算</h2>
       <p class="section-intro">以下以 6 人同行估算，汇率暂按 RM1 ≈ THB8.18。餐厅、Grab 动态价格、酒店房价会浮动，所以用区间比较合理。个人购物、酒水、托运行李加购不包含在内。</p>
       <div class="budget">
@@ -1615,14 +2110,15 @@
       </div>
     </section>
 
-    <section class="sources">
+    <section class="sources" id="sources">
       <h2>资料来源</h2>
+      <p><strong>资料更新日期：</strong>2026年9月25日。价格、开放时间、房型与设施仍需在正式预订前重新确认。</p>
       <p>
         住宿设施 / 容量参考：
         <a href="https://www.centrepointsukhumvit.com/accommodation/three-bedrooms-grand-suite/">Centre Point Sukhumvit 10 官方房型</a>、
         <a href="https://www.centrepoint.com/sukhumvit-10/facilities">Centre Point 官方设施</a>、
         <a href="https://www.shama.com/lakeview-asoke">Shama Lakeview Asoke 官方资料</a>、
-        <a href="https://www.marriott.com/en-us/hotels/bkksp-sukhumvit-park-bangkok-marriott-executive-apartments/overview/">Marriott Executive Apartments Sukhumvit Park 官方资料</a>、
+        <a href="https://www.marriott.com/en-us/hotels/bkksp-marriott-executive-apartments-sukhumvit-park-bangkok/overview/">Marriott Executive Apartments Sukhumvit Park 官方资料</a>、
         <a href="https://www.discoverasr.com/en/ascott-the-residence/thailand/ascott-embassy-sathorn-bangkok">Ascott Embassy Sathorn 官方资料</a>。
         景点时间与票价参考：
         <a href="https://www.royalgrandpalace.th/en/schedules">The Grand Palace 官方 schedule</a>、
